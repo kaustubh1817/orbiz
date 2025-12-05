@@ -175,7 +175,39 @@ body {
     @apply text-[18px] font-poppins-semibold text-[#FFFFFF] bg-[#D41317] rounded-[10px] px-8 py-2 w-fit
   }
 
-  
+}
 
 
+
+.swiper-pagination-bullet.service-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d1d5db;
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active.service-bullet {
+  background: #D41317;
+  width: 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.service-swiper {
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .swiper-pagination-bullet.service-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+
+  .swiper-pagination-bullet-active.service-bullet {
+    width: 24px;
+  }
 }

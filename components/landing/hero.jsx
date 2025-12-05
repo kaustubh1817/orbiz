@@ -1,7 +1,9 @@
+"use client";
+
 export default function Hero() {
   return (
-    <section className="flex flex-row w-full h-128">
-      <div className="flex flex-col w-1/2 justify-center section-block-top container-padding gap-10">
+    <section className="flex flex-col md:flex-row w-full min-h-screen md:min-h-0 md:h-128">
+      <div className="flex flex-col w-full md:w-1/2 justify-center section-block-top container-padding gap-10">
         <h1 className="fl1">
           Innovation to Execution: Accelerate your Technology Development
         </h1>
@@ -15,7 +17,7 @@ export default function Hero() {
         <button className="red-btn mt-10">Learn More</button>
       </div>
 
-      <div className="flex flex-col w-1/2 relative">
+      <div className="flex flex-col w-full md:w-1/2 relative">
         <img
           src="/landing/top-box.png"
           alt="top-box-image"
@@ -26,7 +28,7 @@ export default function Hero() {
                 <img
                     src="/landing/hero1.png"
                     alt="mid-box-left-image"
-                    className="absolute top-0 right-43 w-78"
+                    className="absolute top-4 md:top-0 right-43 w-78"
                 />
                 <img
                     src="/landing/hero2.png"
