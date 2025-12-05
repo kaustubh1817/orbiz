@@ -140,7 +140,7 @@ body {
   }
 
   .fl1 {
-  @apply text-[26px] md:text-[32px] font-poppins-semibold text-[#1A2B6D] ;
+  @apply text-[22px] md:text-[32px] font-poppins-semibold text-[#1A2B6D] ;
 }
 
   .fl2 {
