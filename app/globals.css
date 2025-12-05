@@ -140,7 +140,7 @@ body {
   }
 
   .fl1 {
-  @apply text-[26px] leading-[44px] md:text-[32px] font-poppins-semibold text-[#1A2B6D] ;
+  @apply text-[26px] md:text-[32px] font-poppins-semibold text-[#1A2B6D] ;
 }
 
   .fl2 {
@@ -168,11 +168,7 @@ body {
   }
 
   .fl8 {
-    @apply text-[12px] md:text-[18px] font-poppins-light text-[#1A2B6D] ;
-  }
-
-  .fl9 {
-    @apply text-[12px] text-[16] font-poppins-light text-[#1A2B6D] ;
+    @apply text-[12px] md:text-[16px] font-poppins-light text-[#1A2B6D] ;
   }
 
   .red-btn {

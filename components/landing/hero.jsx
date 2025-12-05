@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section className="flex flex-row w-full ">
+    <section className="flex flex-row w-full h-128">
       <div className="flex flex-col w-1/2 justify-center section-block-top container-padding gap-10">
         <h1 className="fl1">
           Innovation to Execution: Accelerate your Technology Development
         </h1>
-        <p className="fl9">
+        <p className="fl8">
           At Orbiz, we are passionate about helping businesses like yours
           leverage technology to drive growth and improve efficiency. Our team
           of experienced consultants and engineers provide customized IT
