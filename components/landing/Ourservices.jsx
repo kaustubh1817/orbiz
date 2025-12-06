@@ -16,7 +16,7 @@ export default function Ourservices() {
   }, []);
 
   return (
-    <main className="section-block-padding bg-[#F5F5F5]">
+    <main className="section-block-padding bg-[#F5F5F5] container-padding">
       <h1 className="fl1 text-center title-content-gap">Our services</h1>
       <p className="fl8 text-center md:max-w-1/2 mx-auto">
         We offer a range of IT consulting and services to help your business
@@ -25,7 +25,7 @@ export default function Ourservices() {
         got you covered.
       </p>
 
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:mx-13 section-block-padding">
+      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 section-block-top">
         {servicesData.map((service) => (
           <div
             key={service.id}

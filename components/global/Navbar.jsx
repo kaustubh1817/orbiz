@@ -34,7 +34,7 @@ export default function Navbar(){
     }
 
     return(
-        <nav className="w-full md:h-[94px] bg-[#F5F5F5] z-50 flex justify-between md:px-14 items-center mx-auto">
+        <nav className="w-full md:h-[94px] bg-[#F5F5F5] z-50 flex justify-between  items-center container-padding">
               <div>
                     <Link href="/" className="flex items-center">
                     <Image
