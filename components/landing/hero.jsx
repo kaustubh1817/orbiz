@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row w-full min-h-screen md:min-h-0 md:h-128">
+    <section className="flex flex-col md:flex-row w-full min-h-screen md:min-h-0 md:h-128 text-center md:text-left gap-10 section-block-padding container-padding">
       <div className="flex flex-col w-full md:w-1/2 justify-center section-block-top container-padding gap-10">
         <h1 className="fl1">
           Innovation to Execution: Accelerate your Technology Development
@@ -14,7 +14,7 @@ export default function Hero() {
           solutions tailored to your specific needs. Let us help you take your
           business to the next level.
         </p>
-        <button className="red-btn mt-10">Learn More</button>
+        <button className="red-btn mt-0 md:mt-10 mx-auto md:mx-0">Learn More</button>
       </div>
 
       <div className="flex flex-col w-full md:w-1/2 relative">
