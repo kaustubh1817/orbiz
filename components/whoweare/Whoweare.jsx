@@ -4,9 +4,22 @@ export default function Whoweare() {
             <div className="container-padding section-block-padding">
                 <p className="fl1 flex justify-center">Providing Valuable Solution:</p>
                 <p className="fl1 flex justify-center pb-8">Accelerating Growth Swiftly</p>
-                <p className="fl8 flex justify-center px-4">At Orbiz, we pride ourselves on delivering high-quality service to every client. Our goal is to exceed your expectations and provide</p>
-                <p className="fl8 flex justify-center px-4">you with the best possible experience. We stay up-to-date with the latest technological advancements to ensure that our clients</p>
-                <p className="fl8 flex justify-center px-4">have access to the most cutting-edge solutions available.</p>
+                <div className="w-full max-w-[950px] mx-auto px-4 text-center space-y-1 md:space-y-2">
+                    <p className="fl8 ">
+                        At Orbiz, we pride ourselves on delivering high-quality service to every client.
+                        Our goal is to exceed your expectations and provide
+                    </p>
+
+                    <p className="fl8 ">
+                        you with the best possible experience. We stay up-to-date with the latest technological
+                        advancements to ensure that our clients
+                    </p>
+
+                    <p className="fl8">
+                        have access to the most cutting-edge solutions available.
+                    </p>
+                </div>
+
             </div>
             < div className="">
                 <p className="fl1 flex justify-center">Our Strengths</p>
@@ -94,7 +107,7 @@ export default function Whoweare() {
                 <div className="w-full flex justify-center">
                     <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-20  px-6">
 
-                        {/* ---- Leader 1 ---- */}
+
                         <div className="bg-white p-8  flex flex-col items-center text-center">
                             <img
                                 src="/images/leader_1.jpg"
@@ -115,7 +128,7 @@ export default function Whoweare() {
                             </p>
                         </div>
 
-                        {/* ---- Leader 2 ---- */}
+
                         <div className="bg-[#ffffff] p-8  flex flex-col items-center text-center">
                             <img
                                 src="/images/leader_2.jpg"
