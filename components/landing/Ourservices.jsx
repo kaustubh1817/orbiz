@@ -16,7 +16,7 @@ export default function Ourservices() {
   }, []);
 
   return (
-    <main className="section-block-padding ">
+    <main className="section-block-padding bg-[#F5F5F5]">
       <h1 className="fl1 text-center title-content-gap">Our services</h1>
       <p className="fl8 text-center md:max-w-1/2 mx-auto">
         We offer a range of IT consulting and services to help your business
