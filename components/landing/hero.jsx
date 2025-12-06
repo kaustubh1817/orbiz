@@ -3,7 +3,7 @@
 export default function Hero() {
   return (
     <section className="flex flex-col md:flex-row w-full min-h-screen md:min-h-0 md:h-128 text-center md:text-left gap-10 section-block-padding container-padding">
-      <div className="flex flex-col w-full md:w-1/2 justify-center section-block-top container-padding gap-10">
+      <div className="flex flex-col w-full md:w-1/2 justify-center gap-10">
         <h1 className="fl1">
           Innovation to Execution: Accelerate your Technology Development
         </h1>
