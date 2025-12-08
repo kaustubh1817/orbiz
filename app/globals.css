@@ -298,3 +298,31 @@ body {
     display: none !important;
   }
 }
+
+.fun-slide {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: scale(0.65);
+  opacity: 0.4;
+}
+
+.fun-slide.swiper-slide-active {
+  transform: scale(1) translateY(-20px);
+  opacity: 1;
+  z-index: 10;
+}
+
+.fun-slide.swiper-slide-next,
+.fun-slide.swiper-slide-prev {
+  transform: scale(0.8);
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.fun-swiper .swiper-wrapper {
+  align-items: center;
+}
+
+.arrow-btn {
+  @apply bg-[#1a2362] text-white  w-12 h-12 
+  flex items-center justify-center text-2xl font-bold;
+}
