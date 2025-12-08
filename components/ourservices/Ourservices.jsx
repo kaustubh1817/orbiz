@@ -1,3 +1,4 @@
+import BackToTop from "@/components/BackToTop";
 export default function Ourservices() {
   return (
     <main className="min-h-screen pt-15 md:pt-10">
@@ -78,7 +79,19 @@ export default function Ourservices() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col container-padding section-block-bottom">
+
+      <div className="relative w-full section-block-bottom">
+        <img
+          src="/images/service7.jpg"
+          alt="service8"
+          className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
+        />
+        <div className="bg-[#1A2B6D] absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] md:w-[75%] lg:w-[60%] px-6 py-8 sm:px-8 sm:py-10 md:px-10 md:py-12">
+          <p className="fl8 !text-white text-center">At Orbiz, we specialize in crafting custom software solutions designed to meet the specific requirements of your business. Our goal is to deliver robust, scalable, and innovative software that enhances your operational efficiency and drives growth.</p>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col container-padding section-block-padding">
 
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
 
@@ -148,6 +161,26 @@ export default function Ourservices() {
           </div>
         </div>
       </div>
+
+      <div className="relative w-full flex flex-col lg:flex-row items-center section-block-bottom">
+
+        <img
+          src="/images/service9.png"
+          alt="service9"
+          className="w-full h-[300px] sm:h-[400px] lg:w-[80%] lg:h-[600px] object-cover"
+        />
+
+
+        <div className="static w-full p-6 sm:p-8 lg:absolute lg:right-0 lg:top-[40%] lg:-translate-y-1/2 bg-[#1A2B6D] lg:w-[45%]">
+          <p className="!text-white fl8">
+            At Orbiz, we specialize in crafting custom software solutions designed to
+            meet the specific requirements of your business. Our goal is to deliver
+            robust, scalable, and innovative software that enhances your operational
+            efficiency and drives growth.
+          </p>
+        </div>
+      </div>
+
 
       <div className="w-full flex flex-col container-padding section-block-bottom">
 
@@ -219,7 +252,7 @@ export default function Ourservices() {
       </div>
 
 
-
+      <BackToTop />
     </main >
   );
 }

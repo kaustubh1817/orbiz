@@ -1,6 +1,8 @@
+import BackToTop from "@/components/BackToTop";
+
 export default function Whoweare() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen pt-15 md:pt-10">
             <div className="container-padding section-block-padding">
                 <p className="fl1 flex justify-center">Providing Valuable Solution:</p>
                 <p className="fl1 flex justify-center pb-8">Accelerating Growth Swiftly</p>
@@ -25,10 +27,7 @@ export default function Whoweare() {
                 <p className="fl1 flex justify-center">Our Strengths</p>
             </div>
 
-
-
             <div className="w-full flex flex-col container-padding ">
-
                 <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row-reverse gap-12">
 
                     <div className="w-full md:w-1/2 flex justify-center">
@@ -51,8 +50,8 @@ export default function Whoweare() {
                     </div>
                 </div>
             </div>
-            <div className="w-full flex flex-col container-padding  ">
 
+            <div className="w-full flex flex-col container-padding  ">
                 <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row gap-12">
 
                     <div className="w-full md:w-1/2 flex justify-center">
@@ -75,17 +74,16 @@ export default function Whoweare() {
                     </div>
                 </div>
             </div>
+
             <div className="w-full flex flex-col container-padding section-block-bottom ">
-
                 <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row-reverse gap-12 ">
-
                     <div className="w-full md:w-1/2 flex justify-center">
                         <img
                             src="/images/Who_3.png"
                             alt="Platform Strategy"
                             className="w-[55%] object-contain " />
-
                     </div>
+
                     <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
                         <p className="fl2  mb-4">Innovate</p>
 
@@ -101,14 +99,11 @@ export default function Whoweare() {
                 </div>
             </div>
 
-
             <div className="bg-[#F5F5F5] container-padding section-block-bottom">
                 <p className="fl1 flex justify-center py-12">Leadership Team</p>
                 <div className="w-full flex justify-center">
                     <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-20  px-6">
-
-
-                        <div className="bg-white p-8  flex flex-col items-center text-center">
+                        <div className="bg-white p-8 flex flex-col items-center text-center">
                             <img
                                 src="/images/leader_1.jpg"
                                 alt="leader 1"
@@ -116,9 +111,7 @@ export default function Whoweare() {
                             />
 
                             <p className="fl8">CEO and Founder</p>
-                            <h3 className="fl2 mb-4">
-                                Meena Sivan
-                            </h3>
+                            <h3 className="fl2 mb-4">Meena Sivan</h3>
 
                             <p className="fl8 flex justify-center md:px-[50px]">
                                 Business & Technology Management executive with entrepreneurial
@@ -128,8 +121,7 @@ export default function Whoweare() {
                             </p>
                         </div>
 
-
-                        <div className="bg-[#ffffff] p-8  flex flex-col items-center text-center">
+                        <div className="bg-white p-8 flex flex-col items-center text-center">
                             <img
                                 src="/images/leader_2.jpg"
                                 alt="leader 2"
@@ -137,9 +129,7 @@ export default function Whoweare() {
                             />
 
                             <p className="fl8">Director</p>
-                            <h3 className="fl2 mb-4">
-                                Suma Pillai
-                            </h3>
+                            <h3 className="fl2 mb-4">Suma Pillai</h3>
 
                             <p className="fl8 flex justify-center md:px-[50px]">
                                 A dedicated and results-driven professional with 18+ years of
@@ -151,11 +141,10 @@ export default function Whoweare() {
 
                     </div>
                 </div>
-
-
             </div>
 
-        </main >
+            <BackToTop />
+
+        </main>
     );
 }
-

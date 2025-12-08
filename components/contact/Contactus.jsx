@@ -1,4 +1,5 @@
 import LeafletMap from "@/components/map/LeafletMap";
+import BackToTop from "@/components/BackToTop";
 
 export default function Contactus() {
     return (
@@ -83,13 +84,13 @@ export default function Contactus() {
                     </div>
                 </div>
             </div>
-            
+
             <div className="container-padding title-content-gap">
                 <p className="fl1 flex justify-center">Global contact details</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-20 container-padding min-h-[320px]">
-                
+
                 <div className="bg-[#1A2B6D] text-white px-14 py-18 flex flex-col justify-between ">
                     <div>
                         <div className="flex items-center gap-4 mb-4">
@@ -105,7 +106,7 @@ export default function Contactus() {
                     </div>
                 </div>
 
-                
+
                 <div className="bg-[#1A2B6D] text-white px-14 py-18 rounded-md flex flex-col justify-between  ">
                     <div className="">
                         <div className="flex items-center gap-4 mb-4">
@@ -126,7 +127,7 @@ export default function Contactus() {
                     </div>
                 </div>
 
-                
+
                 <div className="bg-[#13296A] text-white px-14 py-18 rounded-md flex flex-col justify-between  ">
                     <div>
                         <div className="flex items-center gap-4 mb-4">
@@ -147,7 +148,7 @@ export default function Contactus() {
                 <p className="fl1 flex justify-center title-content-gap ">Our Location</p>
                 <LeafletMap />
             </div>
-
+            <BackToTop />
         </main>
 
     );

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
+import BackToTop from "@/components/BackToTop";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -178,6 +179,7 @@ export default function Careers() {
           <button className="fun-swiper-next arrow-btn">›</button>
         </div>
       </section>
+      <BackToTop />
     </main>
   );
 }
