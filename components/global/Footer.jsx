@@ -33,21 +33,21 @@ export default function Footer() {
 
   return (
     <footer className="flex flex-col">
-      <section className="!bg-[#1A2B6D] w-full h-75 md:h-70 flex flex-col gap-8 text-center section-block-padding">
+      <section className="!bg-[#1A2B6D] w-full flex flex-col gap-8 text-center section-block-padding">
         <div className="max-w-[80%]  text-center flex flex-col mx-auto gap-8">
           <h2 className="fl4 text-white">
             Subscribe to our newsletter to get updates to our latest collections
           </h2>
           <form
             onSubmit={handleSubscribe}
-            className="md:w-150 w-75 mx-auto bg-white p-2"
+            className="md:w-150 w-75 mx-auto bg-white p-3"
           >
             <div className="flex flex-col md:flex-row md:justify-between">
-              <div className="flex flex-row md:py-2 py-0 pb-2 ">
+              <div className="flex flex-row items-center">
                 <img
                   src="/landing/email.png"
                   alt="email"
-                  className="h-4 w-5 my-auto"
+                  className="h-6 w-8 pl-2 flex-shrink-0"
                 />
                 <input
                   type="email"
@@ -55,15 +55,15 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="flex-1 px-5  outline-none"
+                  className="flex-1 px-6 outline-none"
                 />
               </div>
               <button
                 type="submit"
                 disabled={loading}
-                className="nav-active-text px-4"
+                className="nav-active-text px-8 py-2"
               >
-                {loading ? "Subscribinig..." : "Subscribe"}
+                {loading ? "Subscribing..." : "Subscribe"}
               </button>
             </div>
             {message && (
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
       </section>
 
-      <section className="bg-[#FFFFFF] section-block-padding">
+      <section className="bg-white section-block-padding">
         <div className="container-padding">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 ">
             <div className="lg:col-span-1 flex flex-col gap-5">

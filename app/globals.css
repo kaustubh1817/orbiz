@@ -144,7 +144,7 @@ body {
 }
 
   .fl2 {
-    @apply text-[22px] md:text-[28px] font-poppins-medium text-[#1A2B6D]
+    @apply text-[20px] md:text-[26px] font-poppins-medium text-[#1A2B6D]
   }
 
   .fl3 {
@@ -152,7 +152,7 @@ body {
   }
 
   .fl4 {
-    @apply text-[26px] md:text-[32px] font-poppins-medium text-[#FFFFFF] ;
+    @apply text-[22px] md:text-[32px] font-poppins-medium text-[#FFFFFF] ;
   }
 
   .fl5 {
@@ -160,11 +160,11 @@ body {
   }
 
   .f16 {
-    @apply text-[22px] md:text-[28px] font-poppins-semibold text-[#1A2B6D]
+    @apply text-[20px] md:text-[26px] font-poppins-semibold text-[#1A2B6D]
   }
 
   .fl7 {
-    @apply text-[12px] md:text-[16px] font-poppins text-[#1A2B6D] ;
+    @apply text-[12px] md:text-[18px] font-poppins-medium text-[#1A2B6D] ;
   }
 
   .fl8 {

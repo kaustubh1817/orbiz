@@ -4,7 +4,7 @@ export default function Connect() {
     <section className="flex flex-col md:flex-row  md:order-1 order-2 w-full gap-10 text-center md:text-left section-block-padding container-padding">
       <div className="flex flex-col w-full md:w-1/2 justify-between gap-10">
         <h1 className="fl1 md:w-[80%] w-full">Ready to take your business to the next level?</h1>
-        <p className="fl8">
+        <p className="fl8 md:w-[80%] w-full">
           Contact us today to learn how we can help you achieve your technology
           goals. 
         </p>

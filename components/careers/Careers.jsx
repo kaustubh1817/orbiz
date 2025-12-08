@@ -1,3 +1,21 @@
+"use client"
+
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+
+const images = [
+  "/landing/hero1.png",
+  "/landing/hero2.png",
+  "/landing/hero3.png",
+];
+
 export default function Careers() {
     return (
         <main className="min-h-screen">
@@ -13,13 +31,11 @@ export default function Careers() {
                         Start now
                     </button>
                 </div>
-
             </div>
 
             <div className="container-padding ">
                 <div className="w-full ">
                     <div className="w-full flex flex-col md:flex-row gap-10">
-
                         <div className="flex flex-col w-full md:w-1/2 relative my-30">
                             {/* <img
                                 src="/landing/top-box.png"
@@ -45,13 +61,6 @@ export default function Careers() {
                                 className="absolute bottom-0 right-0"
                             /> */}
                         </div>
-
-
-
-
-
-
-
                         <div className="w-full  bg-[#F5F5F5] md:w-1/2 py-4 md:p-10">
                             <div className="w-full px-4">
                                 <p className="fl1 text-center ">
@@ -59,7 +68,6 @@ export default function Careers() {
                                 <p className="fl1 text-center mb-6">
                                     on this exciting journey
                                 </p>
-
 
                                 <div className=" p-8 bg-white ">
                                     <div className="flex flex-col md:flex-row gap-4 mb-4">
@@ -95,11 +103,59 @@ export default function Careers() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
+            <section className="w-full py-16 bg-white">
+      <h2 className="text-center text-3xl font-bold text-[#1a2362] mb-12">
+        Fun @ ORBiZ
+      </h2>
+
+      <div className="relative flex items-center justify-center w-full">
+        {/* Left Navigation */}
+        <button
+          className="swiper-button-prev bg-[#1a2362] w-12 h-12 flex items-center justify-center text-white rounded-md absolute left-10 z-10"
+        >
+          ‹
+        </button>
+
+        {/* Swiper */}
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          slidesPerView={3}
+          centeredSlides={true}
+          spaceBetween={40}
+          loop={true}
+          className="w-[85%]"
+        >
+          {images.map((src, index) => (
+            <SwiperSlide key={index}>
+              <div className="slide-card w-full h-[480px] overflow-hidden rounded-md">
+                <Image
+                  src={src}
+                  alt="Fun Image"
+                  width={500}
+                  height={600}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Right Navigation */}
+        <button
+          className="swiper-button-next bg-[#1a2362] w-12 h-12 flex items-center justify-center text-white rounded-md absolute right-10 z-10"
+        >
+          ›
+        </button>
+      </div>
+    </section>
         </main>
 
     );
