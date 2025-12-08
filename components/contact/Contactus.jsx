@@ -2,9 +2,9 @@ import LeafletMap from "@/components/map/LeafletMap";
 
 export default function Contactus() {
     return (
-        <main className="min-h-screen">
-            <div className="container-padding section-block-padding">
-                <p className="fl1 flex justify-center">Contact Us</p>
+        <main className="min-h-screen section-block-padding">
+            <div className="container-padding ">
+                <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
             </div>
             <div className="container-padding section-block-bottom ">
                 <div className="w-full bg-[#f5f5f5] ">
