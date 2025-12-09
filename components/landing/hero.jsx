@@ -32,7 +32,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="section-block-padding  pl-10 md:pl-18 2xl:pl-18 3xl:pl-22 relative">
+    <section className="section-block-padding pl-10 md:pl-18 2xl:pl-18 3xl:pl-22 relative my-20">
       <div className="flex flex-col md:flex-row w-full text-center md:text-left gap-10">
         <div className="flex flex-col w-full md:w-1/2 justify-center gap-10">
           <h1 className="fl1">
