@@ -40,7 +40,7 @@ export default function Footer() {
           </h2>
           <form
             onSubmit={handleSubscribe}
-            className="md:w-150 w-75 mx-auto bg-white p-1"
+            className="md:w-150 w-75 mx-auto bg-white p-2"
           >
             <div className="flex flex-col md:flex-row md:justify-between">
               <div className="flex flex-row items-center">

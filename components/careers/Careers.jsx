@@ -21,13 +21,12 @@ const images = [
 
 export default function Careers() {
   return (
-    <main className="min-h-screen container-padding pt-15 md:pt-10">
+    <main className="min-h-screen container-padding section-block-padding mt-10 md:mt-0">
       <div className="section-block-padding">
         <p className="fl1 !text-[18px] md:!text-[32px] flex justify-center pb-8">
           Orbiz: Where Passion Meets Progress
         </p>
-        <div className="w-full ">
-          <p className="fl8 ">
+          <p className="fl8 text-justify md:text-center mx-auto md:w-[90%] w-full">
             We highly appreciate individuals who excel in the face of challenges
             and demonstrate a capacity to identify opportunities amid
             transformations. If you possess a fervent enthusiasm for technology
@@ -41,68 +40,28 @@ export default function Careers() {
             value in response to users' requirements, Orbiz offers an ideal
             professional milieu for your aspirations.
           </p>
-        </div>
-        <div className="container-padding section-block-top">
-          <button className="red-btn  mx-auto block ">Start now</button>
+        <div className="mt-10 w-full">
+          <button className="red-btn mx-auto block">Start now</button>
         </div>
       </div>
 
-      <div className="">
-        <div className="w-full ">
           <div className="w-full flex flex-col md:flex-row gap-10">
-            <div className="flex flex-col w-full md:w-1/2 relative my-30">
-              <div className="relative w-full  px-3 flex justify-center">
+            <div className="flex flex-col w-full md:w-1/2 relative">
+              <div className="relative w-full flex justify-center">
                 <div className="relative w-full max-w-lg mx-auto">
                   <div className="relative w-full">
                     <img
-                      src="/images/bg1.png"
+                      src="/landing/careers2.png"
                       alt="Background Shape"
                       className="w-full h-auto object-contain"
                     />
-
-                    <div className="absolute inset-0 flex flex-col left-30 mt-4 ">
-                      <div className="relative w-90  mb-6">
-                        <img
-                          src="/images/img2.png"
-                          className="w-full h-full  "
-                          alt="Team"
-                        />
-                      </div>
-
-                      <div className="text-center w-70">
-                        <h2 className="fl2 mb-2">
-                          Not just a Workplace;
-                        </h2>
-                        <p className="fl8">
-                          it’s a dynamic community where your enthusiasm for technology,
-                          commitment to continuous learning, and dedication to creating
-                          meaningful solutions align seamlessly with our ethos.
-                        </p>
-                      </div>
-                    </div>
                   </div>
-
-                  <img
-                    src="/images/top1.png"
-                    className="absolute -top-10 -left-6 w-16 md:w-50 -z-10"
-                    alt=""
-                  />
-                  <img
-                    src="/images/bottom1.png"
-                    className="absolute -bottom-8 -right-4 w-16 md:w-50 -z-10"
-                    alt=""
-                  />
                 </div>
               </div>
-
-
-
             </div>
             <div className="w-full  bg-[#F5F5F5] md:w-1/2 py-4 md:p-10">
               <div className="w-full px-4">
-                <p className="fl1 text-center ">Join us</p>
-                <p className="fl1 text-center mb-6">on this exciting journey</p>
-
+                <p className="fl1 text-center title-content-gap">Join us on this exciting journey</p>
                 <div className=" p-8 bg-white ">
                   <div className="flex flex-col md:flex-row gap-4 mb-4">
                     <input
@@ -138,8 +97,6 @@ export default function Careers() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
       <section className="w-full section-block-padding  bg-white">
         <h2 className="text-center fl1 title-content-gap">Fun @ ORBiZ</h2>
@@ -154,8 +111,8 @@ export default function Careers() {
           centeredSlides={true}
           spaceBetween={30}
           breakpoints={{
-            0: { slidesPerView: 1.2 },
-            768: { slidesPerView: 2.2 },
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
           className="fun-swiper h-[480px] mx-auto"

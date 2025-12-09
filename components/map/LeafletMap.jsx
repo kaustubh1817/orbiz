@@ -29,12 +29,12 @@ export default function LeafletMap() {
     <div className="w-full h-[400px] overflow-hidden relative">
 
       {/* === Custom Map/Satellite Toggle === */}
-      <div className="absolute top-4 left-4 z-[1000] bg-white rounded-[10px] flex overflow-hidden">
+      <div className="absolute top-4 left-4 z-[1000] bg-white rounded-[2px] flex overflow-hidden">
         {/* MAP BUTTON */}
         <button
           onClick={() => setLayerType("map")}
           className={`px-4 py-2 text-sm transition ${layerType === "map"
-              ? "text-[#1A2B6D] font-bold bg-gray-100"
+              ? "text-[#1A2B6D] font-bold bg-gray-200"
               : "text-gray-600"
             }`}
         >
@@ -44,8 +44,8 @@ export default function LeafletMap() {
         {/* SATELLITE BUTTON */}
         <button
           onClick={() => setLayerType("sat")}
-          className={`px-4 py-2 text-sm border-l transition ${layerType === "sat"
-              ? "text-[#1E3A8A] font-bold bg-gray-100"
+          className={`px-4 py-2 text-sm border-l border-[#EEE] transition ${layerType === "sat"
+              ? "text-[#1E3A8A] font-bold bg-gray-200"
               : "text-gray-600"
             }`}
         >

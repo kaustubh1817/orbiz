@@ -1,32 +1,45 @@
 import BackToTop from "@/components/BackToTop";
+const leaders = [
+  {
+    id: 1,
+    name: "Meena Sivan",
+    role: "CEO and Founder",
+    image: "/images/leader_1.jpg",
+    desc: `Business & Technology Management executive with entrepreneurial 
+    background and global business management. Passionate about
+    building high performing product and engineering teams and 
+    delivering outcome through cross-geographical and functional 
+    collaboration.`,
+  },
+  {
+    id: 2,
+    name: "Suma Pillai",
+    role: "Director",
+    image: "/images/leader_2.jpg",
+    desc: `A dedicated and results-driven professional with 18+ years of 
+    expertise spanning Finance & Accounts, Human Resource Management,
+    General Administration, Operations, Import/Export, Statutory
+    Compliance, Auditing, Legal Affairs, and Liaison & Coordination.`,
+  },
+];
 
 export default function Whoweare() {
   return (
-    <main className="min-h-screen section-block-padding container-padding  my-20">
-        <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
-          Providing Valuable Solution: Accelerating Growth Swiftly
+    <main className="min-h-screen section-block-padding container-padding  mt-20">
+      <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
+        Providing Valuable Solution: Accelerating Growth Swiftly
+      </p>
+        <p className="fl8 md:w-[70%] w-full mx-auto text-center">
+          At Orbiz, we pride ourselves on delivering high-quality service to
+          every client. Our goal is to exceed your expectations and provide you with the best possible experience. We stay up-to-date with the
+          latest technological advancements to ensure that our clients have access to the most cutting-edge solutions available.
         </p>
-        <div className="w-full max-w-[950px] md:max-w-[1100px] mx-auto px-8 text-center space-y-1 md:space-y-2">
-          <p className="fl8 ">
-            At Orbiz, we pride ourselves on delivering high-quality service to
-            every client. Our goal is to exceed your expectations and provide
-          </p>
-
-          <p className="fl8 ">
-            you with the best possible experience. We stay up-to-date with the
-            latest technological advancements to ensure that our clients
-          </p>
-
-          <p className="fl8 flex justify-center">
-            have access to the most cutting-edge solutions available.
-          </p>
-        </div>
       <div className="mt-10 md:mt-15">
         <p className="fl1 flex justify-center">Our Strengths</p>
       </div>
 
       <div className="w-full flex flex-col  ">
-        <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row-reverse gap-12">
+        <div className="bg-[#FFFFFF] py-8 md:py-12 flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-1/2 flex justify-center">
             <img
               src="/images/Who_1.png"
@@ -50,7 +63,7 @@ export default function Whoweare() {
       </div>
 
       <div className="w-full flex flex-col   ">
-        <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row gap-12">
+        <div className="bg-[#FFFFFF] py-8 md:py-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-1/2 flex justify-center">
             <img
               src="/images/Who_2.png"
@@ -73,7 +86,7 @@ export default function Whoweare() {
       </div>
 
       <div className="w-full flex flex-col  section-block-bottom ">
-        <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row-reverse gap-12 ">
+        <div className="bg-[#FFFFFF] py-8 md:py-12 flex flex-col md:flex-row-reverse gap-12 ">
           <div className="w-full md:w-1/2 flex justify-center">
             <img
               src="/images/Who_3.png"
@@ -98,47 +111,32 @@ export default function Whoweare() {
         </div>
       </div>
 
-      <div className="bg-[#F5F5F5]  section-block-bottom">
-        <p className="fl1 flex justify-center py-12">Leadership Team</p>
+      <div className="bg-[#F5F5F5] p-4 md:p-10">
+        <p className="fl1 flex justify-center title-content-gap mb-12">
+          Leadership Team
+        </p>
+
         <div className="w-full flex justify-center">
-          <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-20  px-6">
-            <div className="bg-white p-8 flex flex-col items-center text-center">
-              <img
-                src="/images/leader_1.jpg"
-                alt="leader 1"
-                className="w-40 h-40 rounded-full object-cover mb-6"
-              />
-
-              <p className="fl8">CEO and Founder</p>
-              <h3 className="fl2 mb-4">Meena Sivan</h3>
-
-              <p className="fl8 flex justify-center md:px-[50px]">
-                Business & Technology Management executive with entrepreneurial
-                background and global business management. Passionate about
-                building high performing product and engineering teams and
-                delivering outcome through cross-geographical and functional
-                collaboration.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 flex flex-col items-center text-center">
-              <img
-                src="/images/leader_2.jpg"
-                alt="leader 2"
-                className="w-40 h-40 rounded-full object-cover mb-6"
-              />
-
-              <p className="fl8">Director</p>
-              <h3 className="fl2 mb-4">Suma Pillai</h3>
-
-              <p className="fl8 flex justify-center md:px-[50px]">
-                A dedicated and results-driven professional with 18+ years of
-                expertise spanning Finance & Accounts, Human Resource
-                Management, General Administration, Operations, Import/Export,
-                Statutory Compliance, Auditing, Legal Affairs, and Liaison &
-                Coordination.
-              </p>
-            </div>
+          <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+            {leaders.map((leader) => (
+              <div
+                key={leader.id}
+                className="bg-white p-8 rounded-[2px] flex flex-col gap-6"
+              >
+                <div className="flex gap-6 md:gap-10 items-center">
+                  <img
+                    src={leader.image}
+                    alt={leader.name}
+                    className="w-40 h-40 rounded-full object-cover"
+                  />
+                  <div className="text-left">
+                    <p className="fl8">{leader.role}</p>
+                    <h3 className="fl2">{leader.name}</h3>
+                  </div>
+                </div>
+                <p className="fl8 text-left">{leader.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
