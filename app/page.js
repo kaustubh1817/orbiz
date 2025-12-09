@@ -35,7 +35,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-15 md:pt-10">
+    <main className="min-h-screen  my-20 ">
       <Hero />
       <Ourservices />
       <Connect />

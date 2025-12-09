@@ -25,34 +25,70 @@ export default function Ourservices() {
         got you covered.
       </p>
 
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 section-block-top">
-        {servicesData.map((service) => (
-          <div
-            key={service.id}
-            className="flex flex-col h-full bg-white hover:shadow-[0_0_15px_10px_rgba(26,43,109,0.12)] transition-shadow duration-400 p-6 gap-6 "
-          >
-            <div className="w-12 md:w-16">
+      <div className="relative">
+
+        
+        <img
+          src="/images/servicebg.png"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+          alt="bg-white-shape"
+        />
+
+       
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 section-block-top relative bg-[#F5F5F5] z-10">
+
+          {servicesData.map((service) => (
+            <div
+              key={service.id}
+              className="relative flex flex-col h-full bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+            >
+             
               <img
-                src={service.icon}
-                alt={service.title}
-                className="w-auto h-12 md:h-15 object-cover"
+                src="/images/servicetop1.png"
+                alt="card-top-shape"
+                className="absolute top-0 left-0 w-[120px] md:w-[140px] pointer-events-none select-none"
               />
-            </div>
-            <h2 className="fl2">{service.title}</h2>
-            <div className="w-full h-[1px] bg-[#1A2B6D4D]"></div>
-            <p className="fl8 flex-grow">{service.description}</p>
-            <a href={service.href} className="fl3 flex justify-between">
-              Learn More
-              <span>
+
+             
+              <div className="absolute top-3 left-5 md:top-3 md:left-7 w-12 md:w-14 z-10">
                 <img
-                  src="/landing/ourservices/red-arrow.webp"
-                  alt="arrow-right-red"
+                  src={service.icon}
+                  alt={service.title}
+                  className="w-full h-full object-contain"
                 />
-              </span>
-            </a>
-          </div>
-        ))}
+              </div>
+
+             
+              <div className="pt-28 md:pt-32 px-6 pb-6">
+                
+                <h2 className="fl2 mb-3 text-[#1A2B6D]">{service.title}</h2>
+
+               
+                <div className="w-full h-[1px] bg-[#1A2B6D]/20 mb-3"></div>
+
+               
+                <p className="fl8 mb-4 text-gray-600 leading-relaxed">{service.description}</p>
+
+               
+                <a
+                  href={service.href}
+                  className="fl3 inline-flex items-center gap-2 text-[#E31E24] hover:gap-3 transition-all duration-200"
+                >
+                  Learn More
+                  <img
+                    src="/landing/ourservices/red-arrow.webp"
+                    alt="arrow"
+                    className="w-4 h-4"
+                  />
+                </a>
+              </div>
+            </div>
+          ))}
+
+        </div>
       </div>
+
+
 
       <div className="md:hidden ">
         <div className="w-90 mx-auto relative section-block-padding">

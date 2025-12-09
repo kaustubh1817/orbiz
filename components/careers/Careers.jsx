@@ -21,9 +21,9 @@ const images = [
 
 export default function Careers() {
   return (
-    <main className="min-h-screen container-padding pt-15 md:pt-10">
+    <main className="min-h-screen container-padding my-20 ">
       <div className="section-block-padding">
-        <p className="fl1 !text-[18px] md:!text-[32px] flex justify-center pb-8">
+        <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
           Orbiz: Where Passion Meets Progress
         </p>
         <div className="w-full ">
@@ -42,7 +42,7 @@ export default function Careers() {
             professional milieu for your aspirations.
           </p>
         </div>
-        <div className="container-padding section-block-top">
+        <div className=" section-block-top">
           <button className="red-btn  mx-auto block ">Start now</button>
         </div>
       </div>

@@ -3,11 +3,11 @@ import BackToTop from "@/components/BackToTop";
 
 export default function Contactus() {
     return (
-        <main className="min-h-screen pt-15 md:pt-10 ">
-            <div className="container-padding section-block-top ">
-                <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
-            </div>
-            <div className="container-padding section-block-bottom ">
+        <main className="min-h-screen container-padding  my-20 ">
+
+            <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">Contact Us</p>
+
+            <div className="section-block-bottom ">
                 <div className="w-full bg-[#f5f5f5] ">
                     <div className="w-full flex flex-col md:flex-row gap-10">
                         <div className="w-full md:w-[40%] flex flex-col gap-12  py-8 items-center ">
@@ -85,11 +85,11 @@ export default function Contactus() {
                 </div>
             </div>
 
-            <div className="container-padding title-content-gap">
+            <div className="title-content-gap">
                 <p className="fl1 flex justify-center">Global contact details</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-20 container-padding min-h-[320px]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-20 min-h-[320px]">
 
                 <div className="bg-[#1A2B6D] text-white px-14 py-18 flex flex-col justify-between ">
                     <div>
@@ -144,7 +144,7 @@ export default function Contactus() {
                 </div>
             </div>
 
-            <div className="container-padding section-block-top mb-20">
+            <div className="section-block-top mb-20">
                 <p className="fl1 flex justify-center title-content-gap ">Our Location</p>
                 <LeafletMap />
             </div>

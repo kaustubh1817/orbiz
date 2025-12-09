@@ -172,7 +172,7 @@ body {
   }
 
   .red-btn {
-    @apply text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#D41317] rounded-[10px] px-8 py-2 w-fit
+    @apply text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#D41317] rounded-[2px] px-8 py-2 w-fit
   }
 
 }
