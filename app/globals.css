@@ -326,3 +326,95 @@ body {
   @apply bg-[#1a2362] text-white  w-12 h-12 
   flex items-center justify-center text-2xl font-bold;
 }
+
+.testimonial-slick .slick-list .slick-track {
+  display: flex;
+  gap: 80px;
+}
+.testimonial-slick .slick-dots {
+  bottom: -50px;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.testimonial-slick .slick-dots li button:before {
+  font-size: 15px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.testimonial-slick .slick-dots li.slick-active button:before {
+  color: #1A2B6D;
+  
+  
+
+}
+.testimonial-slick .slick-prev,
+.testimonial-slick .slick-next {
+  top: unset;
+  bottom: -59px;
+  margin: auto;
+  font-size: 25px;
+}
+.testimonial-slick .slick-prev {
+  left: 35vw;
+}
+.testimonial-slick .slick-next {
+  right: 35vw;
+}
+.testimonial-slick .slick-prev::before,
+.testimonial-slick .slick-next::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: invert(56%) sepia(25%) saturate(1094%) hue-rotate(360deg)
+    brightness(92%) contrast(95%);
+}
+.testimonial-slick .slick-prev::before {
+  background-image: url('/icons/global/left-chev.svg');
+}
+.testimonial-slick .slick-next::before {
+  background-image: url('/icons/global/right-chev.svg');
+}
+
+@media screen and (max-width: 1400px) {
+  .testimonial-slick .slick-list .slick-track {
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #footer {
+    background-size: 0;
+  }
+  .testimonial-slick .slick-list .slick-track {
+    gap: 30px;
+  }
+  .testimonial-slick .slick-prev {
+    left: 20vw;
+  }
+  .testimonial-slick .slick-next {
+    right: 20vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero-social .right-shape::after {
+    right: -30px;
+    width: 30px;
+    height: 30px;
+  }
+  .hero-social .right-shape::before {
+    right: -15px;
+    width: 50px;
+    height: 15px;
+  }
+  .testimonial-slick .slick-prev {
+    left: 75px;
+  }
+  .testimonial-slick .slick-next {
+    right: 75px;
+  }
+}
