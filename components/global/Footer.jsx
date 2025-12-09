@@ -47,7 +47,7 @@ export default function Footer() {
                 <img
                   src="/landing/email.png"
                   alt="email"
-                  className="h-6 w-10 pl-1 flex-shrink-0"
+                  className="md:h-6 md:w-9 h-4 w-6 pl-1 flex-shrink-0"
                 />
                 <input
                   type="email"
@@ -78,8 +78,7 @@ export default function Footer() {
         </div>
       </section>
 
-      <section className="bg-white section-block-padding">
-        <div className="container-padding ">
+      <section className="bg-white section-block-padding container-padding ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 xl:gap-14">
             <div className="lg:col-span-1 flex flex-col gap-5">
               <div className="w-40">
@@ -108,49 +107,49 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col gap-3">
-              <h4 className="fl1">Company</h4>
+            <div className="flex flex-col gap-3 justify-center items-center inline-block">
+              <h4 className="fl1 mb-4">Company</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="/services" className="fl8">
+                  <a href="/services" className="fl8 hover:text-blue-600">
                     Our services
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="fl8">
+                  <a href="/about" className="fl8 hover:text-blue-600">
                     Who we are
                   </a>
                 </li>
                 <li>
-                  <a href="/career" className="fl8">
+                  <a href="/career" className="fl8 hover:text-blue-600">
                     Career
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-3">
-              <h4 className="fl1">Links</h4>
+            <div className="flex flex-col gap-3 justify-center items-center inline-block">
+              <h4 className="fl1 mb-4">Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="/accelerate" className="fl8">
+                  <a href="/accelerate" className="fl8 hover:text-blue-600">
                     Accelerate
                   </a>
                 </li>
                 <li>
-                  <a href="/transform" className="fl8">
+                  <a href="/transform" className="fl8 hover:text-blue-600">
                     Transform
                   </a>
                 </li>
                 <li>
-                  <a href="/innovate" className="fl8">
+                  <a href="/innovate" className="fl8 hover:text-blue-600">
                     Innovate
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div className="flex flex-col gap-3">
-              <h4 className="fl1">Contact</h4>
+            <div className="flex flex-col gap-3 justify-start items-center inline-block">
+              <h4 className="fl1 mb-4">Contact</h4>
               <ul className="space-y-2">
                 <li>
                   <a href="/mailto:contact@orbiz.one" className="fl8">
@@ -160,7 +159,6 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-        </div>
       </section>
       
       <div className="w-full h-[1px] bg-[#1A2B6D1F]"></div>

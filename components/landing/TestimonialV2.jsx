@@ -20,28 +20,28 @@ const TestimonialV2 = () => {
 
         responsive: [
             {
-                breakpoint: 3000, // Large laptops
+                breakpoint: 3000,
                 settings: {
                     centerMode: true,
                     centerPadding: "200px",
                 },
             },
             {
-                breakpoint: 1280, // Large laptops
+                breakpoint: 1280,
                 settings: {
                     centerMode: true,
                     centerPadding: "150px",
                 },
             },
             {
-                breakpoint: 1024, // Tablets landscape
+                breakpoint: 1024,
                 settings: {
                     centerMode: true,
                     centerPadding: "100px",
                 },
             },
             {
-                breakpoint: 768, // Tablets portrait
+                breakpoint: 768, 
                 settings: {
                     centerMode: false,
                     centerPadding: "0px",
@@ -50,7 +50,7 @@ const TestimonialV2 = () => {
                 },
             },
             {
-                breakpoint: 640, // Mobiles
+                breakpoint: 640,
                 settings: {
                     centerMode: false,
                     centerPadding: "0px",
@@ -63,11 +63,9 @@ const TestimonialV2 = () => {
 
     return (
         <section className="bg-[#F5F5F5] section-block-padding overflow-hidden">
-            {/* overflow-hidden prevents slider from overflowing horizontally */}
             <div className="container-padding">
                 <div className=" text-center title-content-gap">
                     <p className="fl1">Testimonial</p>
-
                 </div>
             </div>
 
