@@ -11,7 +11,7 @@ export default function Contactus() {
             <div className="flex flex-col gap-4">
               <h2 className="fl1">Get in touch with us</h2>
 
-              <p className="fl4 max-w-[350px] ">
+              <p className="fl4 max-w-[350px] text-justify ">
                 Thank you for your interest in Orbiz. Whether you’re a client,
                 job seeker, journalist, analyst or investor, you can find the
                 best way to contact us below.
@@ -27,7 +27,7 @@ export default function Contactus() {
                 <h3 className="fl1">Clients</h3>
               </div>
 
-              <p className="fl4 max-w-[350px] ">
+              <p className="fl4 max-w-[350px] text-justify ">
                 Find out more on how we can help you to get the future you want
                 in through our industry expertise, services, and technology
                 partners.
