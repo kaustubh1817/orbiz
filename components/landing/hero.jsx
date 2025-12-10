@@ -4,14 +4,44 @@ import { useState, useEffect } from "react";
 
 const imageSets = [
   [
-    { src: "/landing/hero1.webp", alt: "mid-box-left-image", className: "absolute 3xl:-top-22 md:-top-19 3xl:right-35 md:right-31 3xl:h-[630px] md:h-[540px] h-[400px]" },
-    { src: "/landing/hero2.webp", alt: "mid-box-right-image", className: "absolute 3xl:top-72 md:top-61 3xl:right-85 md:right-74 3xl:h-[600px] md:h-[525px] h-[400px]" },
-    { src: "/landing/hero3.webp", alt: "mid-box-image", className: "absolute right-0 -top-24 3xl:h-[850px] md:h-[750px] h-[600px]" },
+    {
+      src: "/landing/hero1.webp",
+      alt: "mid-box-left-image",
+      className:
+        "absolute 3xl:-top-22 md:-top-19 3xl:right-35 md:right-31 3xl:h-[630px] md:h-[540px] h-[400px]",
+    },
+    {
+      src: "/landing/hero2.webp",
+      alt: "mid-box-right-image",
+      className:
+        "absolute 3xl:top-72 md:top-61 3xl:right-85 md:right-74 3xl:h-[600px] md:h-[525px] h-[400px]",
+    },
+    {
+      src: "/landing/hero3.webp",
+      alt: "mid-box-image",
+      className:
+        "absolute right-0 -top-24 3xl:h-[850px] md:h-[750px] h-[600px]",
+    },
   ],
   [
-    { src: "/landing/hero1.webp", alt: "carousel-image-1", className: "absolute 3xl:top-20 md:top-25 3xl:right-10 md:right-13 3xl:h-[250px] md:h-[235px] h-[175px]" },
-    { src: "/landing/hero2.webp", alt: "carousel-image-2", className: "absolute top-86 right-45 3xl:h-[250px] md:h-[225px] h-[175px]" },
-    { src: "/landing/hero3.webp", alt: "carousel-image-3", className: "absolute right-0 -top-24 3xl:h-[850px] md:h-[750px] h-[600px]" },
+    {
+      src: "/landing/hero1.webp",
+      alt: "mid-box-left-image",
+      className:
+        "absolute 3xl:-top-22 md:-top-19 3xl:right-35 md:right-31 3xl:h-[630px] md:h-[540px] h-[400px]",
+    },
+    {
+      src: "/landing/hero2.webp",
+      alt: "mid-box-right-image",
+      className:
+        "absolute 3xl:top-72 md:top-61 3xl:right-85 md:right-74 3xl:h-[600px] md:h-[525px] h-[400px]",
+    },
+    {
+      src: "/landing/hero3.webp",
+      alt: "mid-box-image",
+      className:
+        "absolute right-0 -top-24 3xl:h-[850px] md:h-[750px] h-[600px]",
+    },
   ],
 ];
 
@@ -19,17 +49,17 @@ export default function Hero() {
   const [currentSet, setCurrentSet] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setIsTransitioning(true);
-  //     setTimeout(() => {
-  //       setCurrentSet((prev) => (prev + 1) % imageSets.length);
-  //       setIsTransitioning(false);
-  //     }, 500);
-  //   }, 4000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentSet((prev) => (prev + 1) % imageSets.length);
+        setIsTransitioning(false);
+      }, 500);
+    }, 4000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="section-block-top md:pb-58 3xl:pb-72 pl-10 md:pl-18 2xl:pl-18 3xl:pl-22 relative">
