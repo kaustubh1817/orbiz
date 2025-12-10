@@ -42,8 +42,8 @@ export default function Navbar() {
                     <Image
                         src="/orbiz_logo.png"
                         alt="Orbiz"
-                        width={120}
-                        height={60}
+                        width={100}
+                        height={50}
                     />
                 </Link>
             </div>
