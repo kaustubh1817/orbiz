@@ -4,14 +4,44 @@ import { useState, useEffect } from "react";
 
 const imageSets = [
   [
-    { src: "/landing/hero1.png", alt: "mid-box-left-image", className: "absolute 3xl:top-20 md:top-25 3xl:right-10 md:right-13 3xl:h-[250px] md:h-[235px] h-[175px]" },
-    { src: "/landing/hero2.png", alt: "mid-box-right-image", className: "absolute top-86 right-45 3xl:h-[250px] md:h-[225px] h-[175px]" },
-    { src: "/landing/hero3.png", alt: "mid-box-image", className: "absolute right-0 3xl:h-[500px] md:h-[450px] h-[350px]" },
+    {
+      src: "/landing/hero1.webp",
+      alt: "mid-box-left-image",
+      className:
+        "absolute 3xl:-top-22 md:-top-19 3xl:right-35 md:right-31 3xl:h-[630px] md:h-[540px] h-[400px]",
+    },
+    {
+      src: "/landing/hero2.webp",
+      alt: "mid-box-right-image",
+      className:
+        "absolute 3xl:top-72 md:top-61 3xl:right-85 md:right-74 3xl:h-[600px] md:h-[525px] h-[400px]",
+    },
+    {
+      src: "/landing/hero3.webp",
+      alt: "mid-box-image",
+      className:
+        "absolute right-0 -top-24 3xl:h-[850px] md:h-[750px] h-[600px]",
+    },
   ],
   [
-    { src: "/landing/hero1.png", alt: "carousel-image-1", className: "absolute 3xl:top-20 md:top-25 3xl:right-10 md:right-13 3xl:h-[250px] md:h-[235px] h-[175px]" },
-    { src: "/landing/hero2.png", alt: "carousel-image-2", className: "absolute top-86 right-45 3xl:h-[250px] md:h-[225px] h-[175px]" },
-    { src: "/landing/hero3.png", alt: "carousel-image-3", className: "absolute right-0 3xl:h-[500px] md:h-[450px] h-[350px]" },
+    {
+      src: "/landing/hero1.webp",
+      alt: "mid-box-left-image",
+      className:
+        "absolute 3xl:-top-22 md:-top-19 3xl:right-35 md:right-31 3xl:h-[630px] md:h-[540px] h-[400px]",
+    },
+    {
+      src: "/landing/hero2.webp",
+      alt: "mid-box-right-image",
+      className:
+        "absolute 3xl:top-72 md:top-61 3xl:right-85 md:right-74 3xl:h-[600px] md:h-[525px] h-[400px]",
+    },
+    {
+      src: "/landing/hero3.webp",
+      alt: "mid-box-image",
+      className:
+        "absolute right-0 -top-24 3xl:h-[850px] md:h-[750px] h-[600px]",
+    },
   ],
 ];
 
@@ -32,9 +62,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="section-block-padding pl-10 md:pl-18 2xl:pl-18 3xl:pl-22 relative">
+    <section className="section-block-top md:pb-58 3xl:pb-72 pl-10 md:pl-18 2xl:pl-18 3xl:pl-22 relative">
       <div className="flex flex-col md:flex-row w-full text-center md:text-left gap-10">
-        <div className="flex flex-col w-full md:w-1/2 justify-center gap-10">
+        <div className="flex flex-col w-full  md:w-1/2 justify-center gap-10">
           <h1 className="fl1">
             Innovation to Execution: Accelerate your Technology Development
           </h1>
@@ -54,7 +84,7 @@ export default function Hero() {
           <img
             src="/landing/top-box.png"
             alt="top-box-image"
-            className="absolute top-28 right-75"
+            className="absolute 3xl:top-12 md:top-10 3xl:right-120 md:right-103.5"
           />
           {imageSets[currentSet].map((img, idx) => (
             <img
@@ -69,7 +99,7 @@ export default function Hero() {
           <img
             src="/landing/bottom-box.svg"
             alt="bottom-box-image"
-            className="absolute bottom-0 right-2 mb-2"
+            className="absolute bottom-0 md:right-2 md:mb-9"
           />
         </div>
       </div>

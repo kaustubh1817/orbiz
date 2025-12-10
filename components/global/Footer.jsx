@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 
 import { useState } from "react";
 import socialLinks from "../../data/socialLink";
@@ -34,21 +36,23 @@ export default function Footer() {
   return (
     <footer className="flex flex-col">
       <section className="!bg-[#1A2B6D] w-full flex flex-col gap-8 text-center section-block-padding">
-        <div className="max-w-[80%]  text-center flex flex-col mx-auto gap-8">
+        <div className="max-w-[715px]  text-center flex flex-col mx-auto gap-8">
           <h2 className="fl2 !text-white">
             Subscribe to our newsletter to get updates to our latest collections
           </h2>
           <form
             onSubmit={handleSubscribe}
-            className="md:w-150 w-75 mx-auto bg-white p-2"
+            className="md:w-full w-75 mx-auto bg-white p-2"
           >
-            <div className="flex flex-col md:flex-row md:justify-between">
+            <div className="flex flex-col md:flex-row md:justify-between md:max-h-16">
               <div className="flex flex-row items-center">
+                <div className="size-4 md:size-6.5 flex justify-center items-center">
                 <img
                   src="/landing/email.png"
                   alt="email"
-                  className="md:h-6 md:w-9 h-4 w-6 pl-1 flex-shrink-0"
+                  className="w-full h-auto flex-shrink-0"
                 />
+                </div>
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -80,14 +84,17 @@ export default function Footer() {
       </section>
 
       <section className="bg-white section-block-padding container-padding ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 xl:gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-10 xl:gap-14">
           <div className="lg:col-span-1 flex flex-col gap-5">
             <div className="w-40">
-              <img
-                src="/orbiz_logo.png"
-                alt="ORBiZ"
-                className="w-full h-auto"
-              />
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/orbiz_logo.png"
+                  alt="Orbiz"
+                  width={90}
+                  height={45}
+                />
+              </Link>
             </div>
             <div className="flex gap-4 flex-wrap">
               {socialLinks.map((social) => (
@@ -102,13 +109,14 @@ export default function Footer() {
                   <img
                     src={social.icon}
                     alt={social.name}
-                    className="h-8 w-8 hover:scale-101 transition-transform duration-300"
+                    className="size-6 hover:scale-101 transition-transform duration-300"
                   />
                 </a>
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-3 justify-center items-center inline-block">
+          <div className="flex flex-row md:justify-between justify-around mx-0 ">
+          <div className="flex flex-col gap-3 justify-center items-center">
             <h4 className="fl5 mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
@@ -128,7 +136,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-3 justify-center items-center inline-block">
+          <div className="flex flex-col gap-3 justify-center items-center ">
             <h4 className="fl5 mb-4">Links</h4>
             <ul className="space-y-2">
               <li>
@@ -148,8 +156,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          <div className="flex flex-col gap-3 justify-start items-center inline-block">
+          </div>
+          <div className="flex flex-col gap-3 items-center ">
             <h4 className="fl5 mb-4">Contact</h4>
             <ul className="space-y-2">
               <li>
