@@ -8,7 +8,7 @@ export default function Connect() {
           Contact us today to learn how we can help you achieve your technology
           goals. 
         </p>
-        <button className="red-btn mt-0 md:mt-10 mx-auto md:mx-0">Let’s Connect</button>
+        <a href="/contact" className="red-btn mt-0 md:mt-10 mx-auto md:mx-0">Let’s Connect</a>
       </div>
 
       <div className="md:w-1/2 w-full">

@@ -34,10 +34,10 @@ export default function Ourservices() {
               platform strategy, and let's embark on a journey to elevate your
               business to new heights of digital success.
             </p>
-            <button className="fl7 w-[150px] h-[55px] mt-8 bg-[#1A2B6D] !text-white flex items-center justify-center gap-2">
+            <a href="/contact" className="fl7 w-[150px] h-[55px] mt-8 bg-[#1A2B6D] !text-white flex items-center justify-center gap-2 mx-auto md:mx-0">
               Connect
               <img src="icons\arrow2.svg" className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -72,10 +72,10 @@ export default function Ourservices() {
               power of the cloud, ensuring your infrastructure scales seamlessly
               to meet the demands of your evolving business landscape.
             </p>
-            <button className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2">
+            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
               Connect
               <img src="icons\arrow2.svg" className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -128,10 +128,10 @@ export default function Ourservices() {
               create a resilient cybersecurity posture that protects your
               business and instils trust among your stakeholders.
             </p>
-            <button className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2">
+            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0 ">
               Connect
               <img src="icons\arrow2.svg" className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -165,10 +165,10 @@ export default function Ourservices() {
               that resonate with your audience and drive business success. Let's
               embark on a journey of innovation together.
             </p>
-            <button className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2">
+            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
               Connect
               <img src="icons\arrow2.svg" className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -219,10 +219,10 @@ export default function Ourservices() {
               business needs. Partner with us to turn your data into a strategic
               asset that drives success in the ever-evolving digital landscape.
             </p>
-            <button className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2">
+            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
               Connect
               <img src="icons\arrow2.svg" className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -257,10 +257,10 @@ export default function Ourservices() {
               that propel your business toward enhanced collaboration and
               sustained growth.
             </p>
-            <button className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2">
+            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
               Connect
               <img src="icons\arrow2.svg" className="w-5 h-5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
