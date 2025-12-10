@@ -50,7 +50,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
             <p className="fl2  mb-4">Accelerate</p>
 
-            <p className="fl4 flex justify-center md:mb-12">
+            <p className="fl4 flex justify-center text-justify md:mb-12">
               In the realm of software business, our commitment is to accelerate
               your growth journey by offering a comprehensive suite of best
               practices, tailored solutions, and a dynamic workforce. This
@@ -74,7 +74,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
             <p className="fl2  mb-4">Transform</p>
 
-            <p className="fl4 flex justify-center md:mb-12">
+            <p className="fl4 flex justify-center text-justify md:mb-12">
               As seasoned practitioners in transformation, we specialize in
               rejuvenating legacy products, seamlessly transitioning them to
               new-age technologies. Our focus is on providing enhanced security
@@ -98,7 +98,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
             <p className="fl2  mb-4">Innovate</p>
 
-            <p className="fl4 flex justify-center md:mb-12">
+            <p className="fl4 flex justify-center text-justify md:mb-12">
               At the core of our mission is a passion for innovation, driven by
               a team of highly skilled professionals. We excel in translating
               ideas into successful executions, guaranteeing success for your
@@ -111,7 +111,7 @@ export default function Whoweare() {
         </div>
       </div>
 
-      <div className="bg-[#F5F5F5] p-4 md:p-10">
+      <div className="bg-[#F5F5F5] relative mt-6 p-4 md:p-10">
         <p className="fl1 flex justify-center title-content-gap mb-12">
           Leadership Team
         </p>
@@ -123,21 +123,32 @@ export default function Whoweare() {
                 key={leader.id}
                 className="bg-white p-8 rounded-[2px] flex flex-col gap-6"
               >
-                <div className="flex gap-6 md:gap-10 items-center">
+                <div className="flex gap-6 md:gap-10 items-center  justify-center">
                   <img
                     src={leader.image}
                     alt={leader.name}
                     className="w-25 h-25 rounded-full object-cover"
                   />
                   <div className="text-left">
-                    <p className="fl4">{leader.role}</p>
+                    
                     <h3 className="fl2">{leader.name}</h3>
+                    <p className="fl4">{leader.role}</p>
+                    
                   </div>
                 </div>
-                <p className="fl4 text-left">{leader.desc}</p>
+                <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
+                <p className="fl4 text-justify">{leader.desc}</p>
               </div>
             ))}
           </div>
+        </div>
+        <div className="">
+          <img
+                    src="\images\top3.png"
+                    alt="comma" className='absolute -top-8 sm:-top-9  md:-top-15 right-0 w-20 h-18 md:w-24 md:h-20 lg:w-40 lg:h-30'>
+
+                </img>
+
         </div>
       </div>
 

@@ -12,16 +12,20 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 const images = [
-  "/landing/dummy.svg",
+  "/landing/dummy3.png",
   "/landing/dummy2.jpg",
-  "/landing/dummy.svg",
+  "/landing/dummy3.png",
   "/landing/dummy2.jpg",
-  "/landing/dummy.svg",
+  "/landing/dummy3.png",
+  "/landing/dummy2.jpg",
+  "/landing/dummy3.png",
+  "/landing/dummy2.jpg",
+  "/landing/dummy3.png",
 ];
 
 export default function Careers() {
   return (
-    <main className="min-h-screen container-padding section-block-padding">
+    <main className="min-h-screen  section-block-padding">
       
         <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
           Orbiz: Where Passion Meets Progress
@@ -51,7 +55,7 @@ export default function Careers() {
             <div className="relative w-full max-w-lg mx-auto">
               <div className="relative w-full">
                 <img
-                  src="/landing/careers2.png"
+                  src="/landing/careers3.png"
                   alt="Background Shape"
                   className="w-full h-auto object-contain"
                 />
@@ -109,8 +113,8 @@ export default function Careers() {
           }}
           loop={true}
           centeredSlides={true}
-          slidesPerView={3}
-          spaceBetween={70}
+          slidesPerView={5}
+          
           className="fun-swiper"
         >
           {images.map((src, index) => (
@@ -155,7 +159,7 @@ export default function Careers() {
         </Swiper>
 
 
-        <div className="flex justify-between items-center mt-10 mx-auto px-10">
+        <div className="flex justify-between items-center mt-10 mx-auto">
           <button className="fun-prev arrow-btn text-3xl">‹</button>
           <button className="fun-next arrow-btn text-3xl">›</button>
         </div>

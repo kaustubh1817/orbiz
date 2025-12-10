@@ -3,9 +3,9 @@ import BackToTop from "@/components/BackToTop";
 
 export default function Contactus() {
   return (
-    <main className="min-h-screen section-block-padding container-padding">
+    <main className="min-h-screen section-block-padding  ">
       <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
-      <div className="w-full bg-[#f5f5f5] p-4">
+      <div className="w-full bg-[#f5f5f5] container-padding p-4">
         <div className="w-full flex flex-col md:flex-row gap-10 items-center">
           <div className="w-full md:w-[40%] flex flex-col gap-12 items-center ">
             <div className="flex flex-col gap-4">
@@ -71,7 +71,7 @@ export default function Contactus() {
         </div>
       </div>
 
-      <div className="section-block-padding">
+      <div className="section-block-padding container-padding">
         <div className="container-padding title-content-gap">
           <p className="fl1 flex justify-center">Global contact details</p>
         </div>
@@ -100,14 +100,14 @@ export default function Contactus() {
                 <img src="/icons/job.svg" className="size-7" alt="Job Icon" />
                 <h3 className="fl2 !text-white">Job Seekers</h3>
               </div>
-              <p className="fl4 !text-white">
+              <p className="fl4 !text-white ">
                 Please refer following link to know more about Orbiz culture and
                 career opportunities.
               </p>
             </div>
             <a
               href="/contact"
-              className="fl3 w-full mt-4 flex justify-between items-center text-white gap-2 hover:gap-3 transition-all duration-200 "
+              className="fl3 w-full pt-10 md:pt-20 flex justify-between items-center text-white gap-2 hover:gap-3 transition-all duration-200 "
             >
               <span>Learn More</span>
 
@@ -143,7 +143,7 @@ export default function Contactus() {
         </div>
       </div>
 
-      <div className="section-block-bottom">
+      <div className="">
         <p className="fl1 flex justify-center title-content-gap ">
           Our Location
         </p>

@@ -26,7 +26,7 @@ export default function LeafletMap() {
   const [layerType, setLayerType] = useState("map");
 
   return (
-    <div className="w-full h-[400px] overflow-hidden relative">
+    <div className="w-full h-[500px] overflow-hidden relative">
 
       {/* === Custom Map/Satellite Toggle === */}
       <div className="absolute top-4 left-4 z-[1000] bg-white rounded-[2px] flex overflow-hidden">
