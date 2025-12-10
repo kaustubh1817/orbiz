@@ -35,7 +35,7 @@ export default function Footer() {
     <footer className="flex flex-col">
       <section className="!bg-[#1A2B6D] w-full flex flex-col gap-8 text-center section-block-padding">
         <div className="max-w-[80%]  text-center flex flex-col mx-auto gap-8">
-          <h2 className="fl4 text-white">
+          <h2 className="fl2 !text-white">
             Subscribe to our newsletter to get updates to our latest collections
           </h2>
           <form
@@ -109,40 +109,40 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col gap-3 justify-center items-center inline-block">
-            <h4 className="fl1 mb-4">Company</h4>
+            <h4 className="fl5 mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/services" className="fl8 hover:text-blue-600">
+                <a href="/services" className="fl4 hover:text-blue-600">
                   Our services
                 </a>
               </li>
               <li>
-                <a href="/about" className="fl8 hover:text-blue-600">
+                <a href="/about" className="fl4 hover:text-blue-600">
                   Who we are
                 </a>
               </li>
               <li>
-                <a href="/careers" className="fl8 hover:text-blue-600">
+                <a href="/careers" className="fl4 hover:text-blue-600">
                   Career
                 </a>
               </li>
             </ul>
           </div>
           <div className="flex flex-col gap-3 justify-center items-center inline-block">
-            <h4 className="fl1 mb-4">Links</h4>
+            <h4 className="fl5 mb-4">Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="fl8 hover:text-blue-600">
+                <a href="/about" className="fl4 hover:text-blue-600">
                   Accelerate
                 </a>
               </li>
               <li>
-                <a href="/about" className="fl8 hover:text-blue-600">
+                <a href="/about" className="fl4 hover:text-blue-600">
                   Transform
                 </a>
               </li>
               <li>
-                <a href="/about" className="fl8 hover:text-blue-600">
+                <a href="/about" className="fl4 hover:text-blue-600">
                   Innovate
                 </a>
               </li>
@@ -150,10 +150,10 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-3 justify-start items-center inline-block">
-            <h4 className="fl1 mb-4">Contact</h4>
+            <h4 className="fl5 mb-4">Contact</h4>
             <ul className="space-y-2">
               <li>
-                <a href="mailto:contact@orbiz.one" className="fl8">
+                <a href="mailto:contact@orbiz.one" className="fl4">
                   contact@orbiz.one
                 </a>
               </li>
@@ -166,15 +166,15 @@ export default function Footer() {
 
       <div className="container-padding py-2 md:py-4">
         <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-4">
-          <p className="fl8">All rights reserved.</p>
+          <p className="fl4">All rights reserved.</p>
           <div className="flex items-center gap-6 sm:gap-10">
-            <a href="/terms" className="fl8 ">
+            <a href="/terms" className="fl4 ">
               Terms of Services
             </a>
-            <a href="/cookies" className="fl8 ">
+            <a href="/cookies" className="fl4 ">
               Cookie Policy
             </a>
-            <a href="/privacy" className="fl8 ">
+            <a href="/privacy" className="fl4 ">
               Privacy Policy
             </a>
           </div>

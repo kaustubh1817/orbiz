@@ -85,7 +85,7 @@ export default function Testimonials() {
               key={testimonial.id}
               className="testimonial-slide bg-white shadow-[0_0_15px_10px_rgba(26,43,109,0.12)] hover:shadow transition-shadow duration-400 p-10 w-100 !md:w-250 h-auto"
             >
-              <p className="fl8">{testimonial.quote}</p>
+              <p className="fl4">{testimonial.quote}</p>
               <div className="flex justify-between ">
                 <div className="flex flex-row gap-2 items-center">
                   <img
@@ -95,7 +95,7 @@ export default function Testimonials() {
                   />
                   <div className="flex flex-col">
                   <h3 className="fl2">{testimonial.name}</h3>
-                  <p className="fl8">{testimonial.title}</p>
+                  <p className="fl4">{testimonial.title}</p>
                   </div>
                 </div>
                 <img

@@ -26,7 +26,7 @@ export default function Careers() {
         <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
           Orbiz: Where Passion Meets Progress
         </p>
-        <p className="fl8 text-justify md:text-center mx-auto md:w-[90%] w-full title-content-gap">
+        <p className="fl4 text-justify md:text-center mx-auto md:w-[90%] w-full title-content-gap">
           We highly appreciate individuals who excel in the face of challenges
           and demonstrate a capacity to identify opportunities amid
           transformations. If you possess a fervent enthusiasm for technology
@@ -61,7 +61,7 @@ export default function Careers() {
         </div>
         <div className="w-full  bg-[#F5F5F5] md:w-1/2 py-4 md:p-10">
           <div className="w-full px-8">
-            <p className="fl1 text-center title-content-gap">Join us on this exciting journey</p>
+            <p className="fl2 text-center title-content-gap">Join us on this exciting journey</p>
             <div className=" p-4 bg-white ">
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <input
@@ -90,7 +90,7 @@ export default function Careers() {
                 placeholder="Message"
                 className="w-full  mb-6 bg-[#f5f5f5] p-3"
               ></textarea>
-              <button className="w-full fl3 bg-[#1A2B6D] !text-white py-3 ">
+              <button className="w-full fl3 bg-[#1A2B6D] text-white py-2">
                 Send
               </button>
             </div>

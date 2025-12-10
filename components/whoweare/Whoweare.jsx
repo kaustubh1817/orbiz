@@ -29,7 +29,7 @@ export default function Whoweare() {
       <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
         Providing Valuable Solution: Accelerating Growth Swiftly
       </p>
-        <p className="fl8 md:w-[70%] w-full mx-auto text-center title-content-gap">
+        <p className="fl4 md:w-[70%] w-full mx-auto text-center title-content-gap">
           At Orbiz, we pride ourselves on delivering high-quality service to
           every client. Our goal is to exceed your expectations and provide you with the best possible experience. We stay up-to-date with the
           latest technological advancements to ensure that our clients have access to the most cutting-edge solutions available.
@@ -50,7 +50,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
             <p className="fl2  mb-4">Accelerate</p>
 
-            <p className="fl8 flex justify-center md:mb-12">
+            <p className="fl4 flex justify-center md:mb-12">
               In the realm of software business, our commitment is to accelerate
               your growth journey by offering a comprehensive suite of best
               practices, tailored solutions, and a dynamic workforce. This
@@ -74,7 +74,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
             <p className="fl2  mb-4">Transform</p>
 
-            <p className="fl8 flex justify-center md:mb-12">
+            <p className="fl4 flex justify-center md:mb-12">
               As seasoned practitioners in transformation, we specialize in
               rejuvenating legacy products, seamlessly transitioning them to
               new-age technologies. Our focus is on providing enhanced security
@@ -98,7 +98,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
             <p className="fl2  mb-4">Innovate</p>
 
-            <p className="fl8 flex justify-center md:mb-12">
+            <p className="fl4 flex justify-center md:mb-12">
               At the core of our mission is a passion for innovation, driven by
               a team of highly skilled professionals. We excel in translating
               ideas into successful executions, guaranteeing success for your
@@ -130,11 +130,11 @@ export default function Whoweare() {
                     className="w-25 h-25 rounded-full object-cover"
                   />
                   <div className="text-left">
-                    <p className="fl8">{leader.role}</p>
+                    <p className="fl4">{leader.role}</p>
                     <h3 className="fl2">{leader.name}</h3>
                   </div>
                 </div>
-                <p className="fl8 text-left">{leader.desc}</p>
+                <p className="fl4 text-left">{leader.desc}</p>
               </div>
             ))}
           </div>

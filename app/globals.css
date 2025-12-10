@@ -132,11 +132,11 @@ body {
   }
 
   .nav-text {
-    @apply text-[16px] font-poppins text-[#1A2B6D] ;
+    @apply text-[12px] md:text-[18px] font-poppins-medium text-[#1A2B6D] ;
   }
 
   .nav-active-text {
-    @apply text-[16px] font-poppins text-[#FFFFFF] bg-[#1A2B6D] 
+    @apply  text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D] 
   }
 
   .fl1 {
@@ -144,35 +144,27 @@ body {
 }
 
   .fl2 {
-    @apply text-[20px] md:text-[26px] font-poppins-medium text-[#1A2B6D]
+    @apply text-[18px] md:text-[28px] font-poppins-medium text-[#1A2B6D]
   }
 
   .fl3 {
-    @apply text-[14px] md:text-[18px] font-poppins-medium text-[#D41317] ;
+    @apply text-[14px] md:text-[18px] font-poppins-medium;
   }
 
   .fl4 {
-    @apply text-[22px] md:text-[32px] font-poppins-medium text-[#FFFFFF] ;
+    @apply text-[12px] md:text-[16px] font-poppins-light text-[#1A2B6D] ;
   }
 
   .fl5 {
-    @apply text-[16px] md:text-[20px] font-poppins-bold text-[#1A2B6D] ;
-  }
-
-  .f16 {
-    @apply text-[20px] md:text-[26px] font-poppins-semibold text-[#1A2B6D]
-  }
-
-  .fl7 {
-    @apply text-[12px] md:text-[18px] font-poppins-medium text-[#1A2B6D] ;
-  }
-
-  .fl8 {
-    @apply text-[12px] md:text-[16px] font-poppins-light text-[#1A2B6D] ;
+    @apply text-[12px] md:text-[20px] font-poppins-semibold text-white
   }
 
   .red-btn {
     @apply text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#D41317] rounded-[2px] px-8 py-2 w-fit
+  }
+
+  .blu-conn {
+   @apply  text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D] w-fit px-8 py-2 mt-8 flex items-center justify-center gap-4 mx-auto md:mx-0
   }
 
 }

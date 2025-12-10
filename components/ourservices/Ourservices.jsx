@@ -1,11 +1,11 @@
 import BackToTop from "@/components/BackToTop";
 export default function Ourservices() {
   return (
-    <main className="min-h-screen section-block-padding container-padding">
+    <main className="min-h-screen section-block-padding">
         <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
           Partner with us, and let Innovation be the Propulsive force
         </p>
-      <div className="w-full flex flex-col">
+      <div className="w-full flex flex-col container-padding">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -17,7 +17,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Platform Strategy</p>
             <div className="w-full h-px bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl8 mb-12  ">
+            <p className="fl4 mb-12  ">
               Craft a winning business approach with our Platform Strategy
               services at Orbiz. We specialize in developing strategic
               frameworks that leverage platforms to enhance your organization's
@@ -34,14 +34,14 @@ export default function Ourservices() {
               platform strategy, and let's embark on a journey to elevate your
               business to new heights of digital success.
             </p>
-            <a href="/contact" className="fl7 w-fit px-8 py-2 mt-8 bg-[#1A2B6D] !text-white flex items-center justify-center gap-2 mx-auto md:mx-0">
+            <a href="/contact" className="blu-conn">
               Connect
-              <img src="icons\arrow2.svg" alt="arrow" className="w-5 h-5" />
+              <img src="icons\arrow2.svg" alt="arrow" className="size-5" />
             </a>
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col section-block-padding ">
+      <div className="w-full flex flex-col section-block-padding container-padding">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -53,7 +53,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Cloud Scaling</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl8 mb-12">
+            <p className="fl4 mb-12">
               Ensure your business is equipped to scale effortlessly in the
               cloud with our Cloud Scaling services at Orbiz. We understand the
               dynamic nature of today's digital landscape and offer tailored
@@ -72,9 +72,9 @@ export default function Ourservices() {
               power of the cloud, ensuring your infrastructure scales seamlessly
               to meet the demands of your evolving business landscape.
             </p>
-            <a href="/contact" className="fl7 w-fit px-8 py-2 mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
+            <a href="/contact" className="blu-conn">
               Connect
-              <img src="icons\arrow2.svg" alt="arrow" className="w-5 h-5" />
+              <img src="icons\arrow2.svg" alt="arrow" className="size-5" />
             </a>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function Ourservices() {
           className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
         />
         <div className="bg-[#1A2B6D] absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] md:w-[75%] lg:w-[60%] sm:py-10 md:py-12">
-          <p className="fl8 !text-white text-center">
+          <p className="fl4 !text-white text-center">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that
@@ -96,7 +96,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col  section-block-padding">
+      <div className="w-full flex flex-col  section-block-padding container-padding">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -108,7 +108,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Cybersecurity</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl8 mb-12">
+            <p className="fl4 mb-12">
               Safeguard your digital assets and fortify your organization
               against cyber threats with our comprehensive Cyber Security
               Services at Orbiz. We understand the critical importance of a
@@ -128,15 +128,15 @@ export default function Ourservices() {
               create a resilient cybersecurity posture that protects your
               business and instils trust among your stakeholders.
             </p>
-            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0 ">
+            <a href="/contact" className="blu-conn">
               Connect
-              <img src="icons\arrow2.svg" alt="arrow" className="w-5 h-5" />
+              <img src="icons\arrow2.svg" alt="arrow" className="size-5" />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="w-full flex flex-col section-block-bottom ">
+      <div className="w-full flex flex-col section-block-bottom container-padding ">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -148,7 +148,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Product Engineering</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl8 mb-12">
+            <p className="fl4 mb-12">
               Elevate your product development journey with our comprehensive
               Product Engineering services at Orbiz. We specialize in
               transforming visionary concepts into tangible, market-ready
@@ -165,9 +165,9 @@ export default function Ourservices() {
               that resonate with your audience and drive business success. Let's
               embark on a journey of innovation together.
             </p>
-            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
+            <a href="/contact" className="blu-conn">
               Connect
-              <img src="icons\arrow2.svg" alt="arrow" className="w-5 h-5" />
+              <img src="icons\arrow2.svg" alt="arrow" className="size-5" />
             </a>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function Ourservices() {
         />
 
         <div className="static w-full p-6 sm:p-8 lg:absolute lg:right-0 lg:top-[40%] lg:-translate-y-1/2 bg-[#1A2B6D] lg:w-[45%]">
-          <p className="!text-white fl8">
+          <p className="!text-white fl4">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that
@@ -190,7 +190,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col section-block-bottom">
+      <div className="w-full flex flex-col section-block-bottom container-padding">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -202,7 +202,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Data Engineering</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl8 mb-12">
+            <p className="fl4 mb-12">
               Empower your business with our Data Engineering services, where we
               seamlessly bridge the gap between raw data and actionable
               insights. At Orbiz, our expert data engineers specialize in
@@ -219,15 +219,15 @@ export default function Ourservices() {
               business needs. Partner with us to turn your data into a strategic
               asset that drives success in the ever-evolving digital landscape.
             </p>
-            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
+            <a href="/contact" className="blu-conn">
               Connect
-              <img src="icons\arrow2.svg" alt="arrow" className="w-5 h-5" />
+              <img src="icons\arrow2.svg" alt="arrow" className="size-5" />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="w-full flex flex-col">
+      <div className="w-full flex flex-col container-padding">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -239,7 +239,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Integrations</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl8 mb-12">
+            <p className="fl4 mb-12">
               Facilitate seamless connectivity across your business ecosystem
               with our Integration Services at Orbiz. We specialize in creating
               cohesive solutions that harmonize disparate systems, applications,
@@ -257,9 +257,9 @@ export default function Ourservices() {
               that propel your business toward enhanced collaboration and
               sustained growth.
             </p>
-            <a href="/contact" className="fl7 w-[150px] h-[48px] mt-8 flex items-center justify-center bg-[#1A2B6D] !text-white gap-2 mx-auto md:mx-0">
+            <a href="/contact" className="blu-conn">
               Connect
-              <img src="icons\arrow2.svg" alt="arrow" className="w-5 h-5" />
+              <img src="icons\arrow2.svg" alt="arrow" className="size-5" />
             </a>
           </div>
         </div>

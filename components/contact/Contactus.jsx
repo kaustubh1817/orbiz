@@ -11,7 +11,7 @@ export default function Contactus() {
             <div className="flex flex-col gap-4">
               <h2 className="fl1">Get in touch with us</h2>
 
-              <p className="fl8 max-w-[350px] ">
+              <p className="fl4 max-w-[350px] ">
                 Thank you for your interest in Orbiz. Whether you’re a client,
                 job seeker, journalist, analyst or investor, you can find the
                 best way to contact us below.
@@ -27,7 +27,7 @@ export default function Contactus() {
                 <h3 className="fl1">Clients</h3>
               </div>
 
-              <p className="fl8 max-w-[350px] ">
+              <p className="fl4 max-w-[350px] ">
                 Find out more on how we can help you to get the future you want
                 in through our industry expertise, services, and technology
                 partners.
@@ -40,30 +40,30 @@ export default function Contactus() {
                 <input
                   type="text"
                   placeholder="First Name *"
-                  className="w-full fl8 bg-[#f5f5f5] p-3"
+                  className="w-full fl4 bg-[#f5f5f5] p-3"
                 />
                 <input
                   type="text"
                   placeholder="Last Name *"
-                  className="w-full fl8 bg-[#f5f5f5] p-3"
+                  className="w-full fl4 bg-[#f5f5f5] p-3"
                 />
               </div>
               <input
                 type="email"
                 placeholder="Email Id *"
-                className="w-full fl8 bg-[#f5f5f5] p-3 mb-4 "
+                className="w-full fl4 bg-[#f5f5f5] p-3 mb-4 "
               />
               <input
                 type="text"
                 placeholder="Company Name"
-                className="w-full fl8 mb-4 bg-[#f5f5f5] p-3"
+                className="w-full fl4 mb-4 bg-[#f5f5f5] p-3"
               />
               <textarea
                 rows={5}
                 placeholder="Message"
-                className="w-full fl8 mb-6 bg-[#f5f5f5] p-3"
+                className="w-full fl4 mb-6 bg-[#f5f5f5] p-3"
               ></textarea>
-              <button className="w-full fl3 bg-[#1A2B6D] !text-white py-3 ">
+              <button className="w-full fl3 bg-[#1A2B6D] text-white py-3">
                 Send
               </button>
             </div>
@@ -79,18 +79,14 @@ export default function Contactus() {
           <div className="bg-[#1A2B6D] text-white p-10 rounded-[2px] flex flex-col justify-between ">
             <div>
               <div className="flex items-center gap-4 mb-4">
-                <img
-                  src="/icons/mail.svg"
-                  className="w-10 h-10"
-                  alt="Chat Icon"
-                />
+                <img src="/icons/mail.svg" className="size-7" alt="Chat Icon" />
                 <h3 className="fl2 !text-white">Chat with Us</h3>
               </div>
-              <p className="fl8 !text-white">
+              <p className="fl4 !text-white">
                 Email:&nbsp;
                 <a
                   href="mailto:contact@orbiz.one"
-                  className="underline fl8 !text-white"
+                  className="underline fl4 !text-white"
                 >
                   contact@orbiz.one
                 </a>
@@ -101,24 +97,26 @@ export default function Contactus() {
           <div className="bg-[#1A2B6D] text-white p-10 rounded-[2px] flex flex-col">
             <div className="">
               <div className="flex items-center gap-4 mb-4">
-                <img
-                  src="/icons/job.svg"
-                  className="w-10 h-10"
-                  alt="Job Icon"
-                />
+                <img src="/icons/job.svg" className="size-7" alt="Job Icon" />
                 <h3 className="fl2 !text-white">Job Seekers</h3>
               </div>
-              <p className="fl8 !text-white">
+              <p className="fl4 !text-white">
                 Please refer following link to know more about Orbiz culture and
                 career opportunities.
               </p>
             </div>
-            <div className="mt-4">
-              <button className="fl8 flex items-center gap-2 !text-white ">
-                Learn More
-                <span className="text-lg">→</span>
-              </button>
-            </div>
+            <a
+              href="/contact"
+              className="fl3 w-full mt-4 flex justify-between items-center text-white gap-2 hover:gap-3 transition-all duration-200 "
+            >
+              <span>Learn More</span>
+
+              <img
+                src="/landing/ourservices/red-arrow.webp"
+                alt="arrow"
+                className="w-6 h-auto !text-white"
+              />
+            </a>
           </div>
 
           <div className="bg-[#13296A] text-white p-10 rounded-[2px] flex flex-col">
@@ -126,12 +124,12 @@ export default function Contactus() {
               <div className="flex items-center gap-4 mb-4">
                 <img
                   src="/icons/location.svg"
-                  className="w-10 h-10"
+                  className="size-7"
                   alt="Location Icon"
                 />
                 <h3 className="fl2 !text-white">Head Office</h3>
               </div>
-              <p className="fl8 !text-white ">
+              <p className="fl4 !text-white ">
                 Orbiz Analytics India Pvt. Ltd.
                 <br />
                 Plot No. 52, Suman Ankur complex,
