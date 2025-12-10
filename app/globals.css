@@ -418,3 +418,59 @@ body {
     right: 75px;
   }
 }
+.fun-swiper .swiper-slide {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.fun-card {
+  width: 100%;
+  height: 800px;
+  max-width: 420px;
+  
+  overflow: hidden;
+  position: relative;
+}
+
+/* CENTER SLIDE */
+.fun-swiper .swiper-slide-active .fun-card {
+  transform: scale(1.50);
+  opacity: 1;
+  z-index: 3;
+}
+
+/* LEFT + RIGHT SLIDES */
+.fun-swiper .swiper-slide-next .fun-card,
+.fun-swiper .swiper-slide-prev .fun-card {
+  transform: scale(0.8);
+  opacity: 0.75;
+  z-index: 2;
+}
+
+/* All outer slides */
+.fun-swiper .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev) .fun-card {
+  transform: scale(0.75);
+  opacity: 0.3;
+}
+
+/* Navigation buttons */
+.fun-nav-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fun-nav {
+  width: 38px;
+  height: 38px;
+  background: #1A2B6D;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
