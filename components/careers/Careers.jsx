@@ -41,7 +41,7 @@ export default function Careers() {
           professional milieu for your aspirations.
         </p>
         <div className="mt-10 w-full">
-          <button className="red-btn mx-auto block">Start now</button>
+          <a href="/careers" className="red-btn mx-auto block">Start now</a>
         </div>
       </div>
 

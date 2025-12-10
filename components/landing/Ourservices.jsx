@@ -39,7 +39,7 @@ export default function Ourservices() {
               }}
             >
               <div
-                className="absolute -top-2 -left-2 md:w-33 md:h-18 2xl:w-46 2xl:h-25 z-10 flex items-center justify-center"
+                className="absolute -top-2 -left-2 md:w-35 md:h-19 2xl:w-46.5 2xl:h-25.5 z-10 flex items-center justify-center"
                 style={{
                   backgroundImage:
                     "url(/landing/ourservices/OurServices-top-bg.webp)",
