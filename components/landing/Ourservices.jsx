@@ -34,8 +34,8 @@ export default function Ourservices() {
               style={{
                 backgroundImage:
                   "url(/landing/ourservices/OurServices-bg.webp)",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <div
@@ -60,15 +60,13 @@ export default function Ourservices() {
 
                 <div className="w-full h-[1px] bg-[#1A2B6D]/20 mb-3"></div>
 
-                <p className="fl8 text-gray-600 h-35">
-                  {service.description}
-                </p>
+                <p className="fl8 text-gray-600 h-35">{service.description}</p>
                 <a
                   href={service.href}
                   className="fl3 w-full flex justify-between items-center text-[#E31E24] gap-2 hover:gap-3 transition-all duration-200 "
                 >
                   <span>Learn More</span>
-                  
+
                   <img
                     src="/landing/ourservices/red-arrow.webp"
                     alt="arrow"
@@ -121,15 +119,30 @@ export default function Ourservices() {
           >
             {servicesData.map((service) => (
               <SwiperSlide key={service.id} className="w-auto">
-                <div className="flex flex-col h-full bg-white shadow-[0_0_15px_10px_rgba(26,43,109,0.12)] hover:shadow transition-shadow duration-400 p-6 gap-6 ">
-                  <div className="w-full md:w-16 flex justify-center">
+                <div
+                  className="relative flex flex-col h-full shadow-[0_0_15px_10px_rgba(26,43,109,0.12)] hover:shadow transition-shadow duration-400 p-6 gap-6 "
+                  style={{
+                    backgroundImage:
+                      "url(/landing/ourservices/OurServices-bg.webp)",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <div className="w-33 h-17.5 absolute -top-2 -left-2 flex items-center justify-center"
+                  style={{
+                  backgroundImage:
+                    "url(/landing/ourservices/OurServices-top-bg.webp)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}>
                     <img
                       src={service.icon}
                       alt={service.title}
-                      className="w-auto h-12 md:h-15 object-cover"
+                      className="w-auto h-12 md:h-15 object-cover pr-4 pt-2"
                     />
                   </div>
-                  <h2 className="fl2 flex justify-center">{service.title}</h2>
+                  <h2 className="fl2 flex justify-center pt-15">{service.title}</h2>
                   <div className="w-full h-[1px] bg-[#1A2B6D4D]"></div>
                   <p className="fl8 flex-grow">{service.description}</p>
                   <a href={service.href} className="fl3 flex justify-between">
