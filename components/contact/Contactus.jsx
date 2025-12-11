@@ -1,7 +1,12 @@
-import dynamic from 'next/dynamic';
+"use client";
+import dynamic from "next/dynamic";
 
-const LeafletMap = dynamic(() => import('@/components/map/LeafletMap'), { ssr: false });
-const BackToTop = dynamic(() => import("@/components/BackToTop"), { ssr: false });
+const LeafletMap = dynamic(() => import("@/components/map/LeafletMap"), {
+  ssr: false,
+});
+const BackToTop = dynamic(() => import("@/components/BackToTop"), {
+  ssr: false,
+});
 
 export default function Contactus() {
   return (
@@ -132,10 +137,8 @@ export default function Contactus() {
                 <h3 className="fl2 !text-white">Head Office</h3>
               </div>
               <p className="fl4 !text-white text-justify">
-                Orbiz Analytics India Pvt. Ltd.
-                Plot No. 52, Suman Ankur complex,
-                Shayadri Farm, Baner Road, Baner,
-                Pune 411045
+                Orbiz Analytics India Pvt. Ltd. Plot No. 52, Suman Ankur
+                complex, Shayadri Farm, Baner Road, Baner, Pune 411045
               </p>
             </div>
           </div>
