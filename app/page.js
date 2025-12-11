@@ -2,7 +2,6 @@ import Image from "next/image";
 import Hero from '../components/landing/Hero.jsx';
 import Ourservices from "../components/landing/Ourservices.jsx"
 import Connect from "../components/landing/Connect.jsx"
-import Testimonials from "@/components/landing/Testimonials.jsx";
 import BackToTop from "@/components/BackToTop";
 import TestimonialV2 from "@/components/landing/TestimonialV2.jsx";
 

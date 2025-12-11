@@ -1,4 +1,6 @@
-import Contactus from "@/components/contact/Contactus"
+import dynamic from "next/dynamic";
+
+const Contactus =  dynamic(() => import("@/components/contact/Contactus"), { ssr: false });
 
 export const metadata = {
   title: 'Contact | Orbiz',
