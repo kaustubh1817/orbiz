@@ -161,7 +161,7 @@ export default function Careers() {
         </Swiper>
 
 
-        <div className="flex justify-between items-center mt-10 mx-auto">
+        <div className="flex justify-between items-center mt-10 mx-4">
           <button className="fun-prev arrow-btn text-3xl">‹</button>
           <button className="fun-next arrow-btn text-3xl">›</button>
         </div>
