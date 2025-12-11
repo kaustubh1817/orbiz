@@ -7,22 +7,34 @@ export default function BackToTop() {
     const [visible, setVisible] = useState(false);
 
 
-    useEffect(() => {
-        const toggleVisibility = () => {
-            if (window.scrollY > 300) setVisible(true);
-            else setVisible(false);
-        };
-
-        window.addEventListener("scroll", toggleVisibility);
-        return () => window.removeEventListener("scroll", toggleVisibility);
-    }, []);
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
+      useEffect(() => {
+    const toggleVisibility = () => {
+      if (typeof window !== "undefined" && window.scrollY > 300) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
     };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", toggleVisibility);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("scroll", toggleVisibility);
+      }
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
 
     return (
         <>
