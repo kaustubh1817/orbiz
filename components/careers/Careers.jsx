@@ -30,7 +30,7 @@ export default function Careers() {
         <p className="fl1 text-center mx-auto container-padding title-content-gap md:w-1/2 w-full">
           Orbiz: Where Passion Meets Progress
         </p>
-        <p className="fl4 text-justify md:text-center mx-auto md:w-[90%] w-full container-padding title-content-gap">
+        <p className="fl4 text-justify mx-auto md:w-[90%] w-full container-padding title-content-gap">
           We highly appreciate individuals who excel in the face of challenges
           and demonstrate a capacity to identify opportunities amid
           transformations. If you possess a fervent enthusiasm for technology
@@ -63,10 +63,11 @@ export default function Careers() {
             </div>
           </div>
         </div>
-        <div className="w-full  bg-[#F5F5F5] md:w-1/2 py-4 md:p-10 ">
-          <div className="w-full mx-6 md:mx-0">
+        <div className="bg-white md:w-1/2 w-full">
+        <div className="bg-[#F5F5F5] py-4 md:p-10">
+          <div className="mx-6 md:mx-0">
             <p className="fl2 text-center title-content-gap">Join us on this exciting journey</p>
-            <div className=" p-4 bg-white ">
+            <div className="p-4 bg-white ">
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <input
                   type="text"
@@ -99,6 +100,7 @@ export default function Careers() {
               </button>
             </div>
           </div>
+        </div>
         </div>
       </div>
 

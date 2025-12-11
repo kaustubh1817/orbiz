@@ -75,7 +75,7 @@ export default function Contactus() {
         <div className="container-padding title-content-gap">
           <p className="fl1 flex justify-center">Global contact details</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:min-h-[250px] 3xl:min-h-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:min-h-[250px] 3xl:min-h-[300px]">
           <div className="bg-[#1A2B6D] text-white p-10 rounded-[2px] flex flex-col justify-between ">
             <div>
               <div className="flex items-center gap-4 mb-4">

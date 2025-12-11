@@ -10,14 +10,13 @@ const TestimonialCard = () => {
                 </p>
             </div>
             <div className="flex flex-row">
-                <div className='flex gap-5 items-center flex-col sm:flex-row md:pl-6'>
+                <div className='flex gap-5 items-center flex-row md:pl-6'>
                     <img
                         src="\images\user1.svg"
                         alt="user"
                         className="size-[40px] md:size-[40px] xl:size-[50px] rounded-full mx-auto sm:mx-[6px]"
                     />
                     <div className="text-center sm:text-left">
-
                         <h5 className="fl3 text-[#1A2B6D] my-1">
                             Arvind Sharma
                         </h5>
