@@ -2,7 +2,7 @@ import BackToTop from "@/components/BackToTop";
 export default function Ourservices() {
   return (
     <main className="min-h-screen section-block-padding">
-        <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
+        <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full px-10">
           Partner with us, and let Innovation be the Propulsive force
         </p>
       <div className="w-full flex flex-col container-padding">

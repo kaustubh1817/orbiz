@@ -37,7 +37,7 @@ export default function Footer() {
     <footer className="flex flex-col">
       <section className="!bg-[#1A2B6D] w-full flex flex-col gap-8 text-center section-block-padding">
         <div className="max-w-[715px]  text-center flex flex-col mx-auto gap-8">
-          <h2 className="fl2 !text-white">
+          <h2 className="fl2 !text-white px-10 md:px-0">
             Subscribe to our newsletter to get updates to our latest collections
           </h2>
           <form
