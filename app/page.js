@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Hero from '../components/landing/Hero.jsx';
 import Ourservices from "../components/landing/Ourservices.jsx"
