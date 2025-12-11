@@ -3,9 +3,9 @@ import BackToTop from "@/components/BackToTop";
 
 export default function Contactus() {
   return (
-    <main className="min-h-screen section-block-padding  ">
+    <main className="min-h-screen section-block-padding md:px-18 2xl:px-18 3xl:px-22 ">
       <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
-      <div className="w-full bg-[#f5f5f5] container-padding p-4">
+      <div className="w-full bg-[#f5f5f5]  p-4">
         <div className="w-full flex flex-col md:flex-row gap-10 items-center">
           <div className="w-full md:w-[40%] flex flex-col gap-12 items-center ">
             <div className="flex flex-col gap-4">
@@ -143,7 +143,7 @@ export default function Contactus() {
         </div>
       </div>
 
-      <div className="">
+      <div className="md:px-18 2xl:px-18 3xl:px-22">
         <p className="fl1 flex justify-center title-content-gap ">
           Our Location
         </p>

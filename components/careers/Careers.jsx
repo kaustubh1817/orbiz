@@ -49,7 +49,7 @@ export default function Careers() {
         </div>
       
 
-      <div className="w-full flex flex-col md:flex-row gap-10 section-block-top">
+      <div className="w-full flex flex-col md:flex-row gap-10 md:px-18 2xl:px-18 3xl:px-22 section-block-top">
         <div className="flex flex-col w-full md:w-1/2 relative">
           <div className="relative w-full flex justify-center">
             <div className="relative w-full max-w-lg mx-auto">
