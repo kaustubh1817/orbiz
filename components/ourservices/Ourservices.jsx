@@ -17,7 +17,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Platform Strategy</p>
             <div className="w-full h-px bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-12  ">
+            <p className="fl4 mb-0 md:mb-12 text-justify">
               Craft a winning business approach with our Platform Strategy
               services at Orbiz. We specialize in developing strategic
               frameworks that leverage platforms to enhance your organization's
@@ -53,7 +53,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Cloud Scaling</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-12">
+            <p className="fl4 mb-0 md:mb-12 text-justify">
               Ensure your business is equipped to scale effortlessly in the
               cloud with our Cloud Scaling services at Orbiz. We understand the
               dynamic nature of today's digital landscape and offer tailored
@@ -80,20 +80,30 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="relative w-full section-block-bottom">
+      <div className="relative w-full section-block-padding">
+         <img
+            src="/ourServices/OurSer-top.webp"
+            alt="top-box-image"
+            className="absolute md:h-17.5 md:w-45 h-9 w-24 top-5 md:top-6 left-0"
+          />
         <img
           src="/images/service7.jpg"
           alt="service8"
           className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
         />
-        <div className="bg-[#1A2B6D] absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] md:w-[75%] lg:w-[60%] sm:py-10 md:py-12">
-          <p className="fl4 !text-white text-center">
+        <div className="bg-[#1A2B6D] absolute bottom-1 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] md:w-[75%] lg:w-[60%] p-5 sm:p-8 md:p-10">
+          <p className="fl4 !text-white text-justify">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that
             enhances your operational efficiency and drives growth.
           </p>
         </div>
+           <img
+            src="/ourServices/ourSer-bottom.webp"
+            alt="bottom-box-image"
+            className="absolute bottom-7 right-0 hidden md:block"
+          />
       </div>
 
       <div className="w-full flex flex-col  section-block-padding container-padding">
@@ -108,7 +118,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Cybersecurity</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-12">
+            <p className="fl4 mb-0 md:mb-12 text-justify">
               Safeguard your digital assets and fortify your organization
               against cyber threats with our comprehensive Cyber Security
               Services at Orbiz. We understand the critical importance of a
@@ -148,7 +158,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Product Engineering</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-12">
+            <p className="fl4 mb-0 md:mb-12 text-justify">
               Elevate your product development journey with our comprehensive
               Product Engineering services at Orbiz. We specialize in
               transforming visionary concepts into tangible, market-ready
@@ -180,17 +190,22 @@ export default function Ourservices() {
           className="w-full h-[300px] sm:h-[400px] lg:w-[80%] lg:h-[600px] object-cover"
         />
 
-        <div className="static w-full p-6 sm:p-8 lg:absolute lg:right-0 lg:top-[40%] lg:-translate-y-1/2 bg-[#1A2B6D] lg:w-[45%]">
-          <p className="!text-white fl4">
+        <div className="absolute md:static w-[90%] p-5 sm:p-8 md:p-10 lg:absolute lg:right-0 -bottom-15 md:bottom-45 lg:-translate-y-1/2 bg-[#1A2B6D] lg:w-[45%]">
+          <p className="!text-white fl4 text-justify">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that
             enhances your operational efficiency and drives growth.
           </p>
+           <img
+            src="/ourServices/ourser-bottom-one.png"
+            alt="bottom-box-image"
+            className="absolute -bottom-9 right-0 hidden md:block"
+          />
         </div>
       </div>
 
-      <div className="w-full flex flex-col section-block-bottom container-padding">
+      <div className="w-full flex flex-col section-block-padding container-padding mt-15 md:mt-0">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -202,7 +217,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Data Engineering</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-12">
+            <p className="fl4 mb-0 md:mb-12 text-justify">
               Empower your business with our Data Engineering services, where we
               seamlessly bridge the gap between raw data and actionable
               insights. At Orbiz, our expert data engineers specialize in
@@ -239,7 +254,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Integrations</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-12">
+            <p className="fl4 mb-0 md:mb-12 text-justify">
               Facilitate seamless connectivity across your business ecosystem
               with our Integration Services at Orbiz. We specialize in creating
               cohesive solutions that harmonize disparate systems, applications,
