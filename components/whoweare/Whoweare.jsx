@@ -51,7 +51,7 @@ export default function Whoweare() {
               className="w-[55%] object-contain "
             />
           </div>
-          <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
+          <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-12">
             <p className="fl2  mb-4">Accelerate</p>
 
             <p className="fl4 flex justify-center text-justify md:mb-12">
@@ -75,7 +75,7 @@ export default function Whoweare() {
               className="w-[55%] object-contain "
             />
           </div>
-          <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
+          <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-12">
             <p className="fl2  mb-4">Transform</p>
 
             <p className="fl4 flex justify-center text-justify md:mb-12">
@@ -99,7 +99,7 @@ export default function Whoweare() {
             />
           </div>
 
-          <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-[50px]">
+          <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-12">
             <p className="fl2  mb-4">Innovate</p>
 
             <p className="fl4 flex justify-center text-justify md:mb-12">
@@ -121,12 +121,12 @@ export default function Whoweare() {
         </p>
 
         <div className="w-full flex justify-center container-padding">
-          <div className="grid md:w-full grid-cols-1 md:grid-cols-2 gap-10 md:gap-20"
+          <div className="grid md:w-full grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10"
           >
             {leaders.map((leader) => (
               <div
                 key={leader.id}
-                className="bg-white p-6 rounded-[2px] w-[90%] flex flex-col mx-auto gap-6"
+                className="bg-white p-12 rounded-[2px] w-[90%] flex flex-col mx-auto gap-6"
               >
                 <div className="flex gap-6 md:gap-10 items-center  justify-center">
                   <img
