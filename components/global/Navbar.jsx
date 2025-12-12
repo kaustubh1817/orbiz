@@ -36,7 +36,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="w-full md:h-[94px] bg-[#F5F5F5] py-3 fixed top-0 z-[10000] left-1/2 -translate-x-1/2 flex justify-between  md:rounded-none items-center container-padding ">
+        <nav className="w-full lg:h-[94px] bg-[#F5F5F5] py-3 fixed top-0 z-[10000] left-1/2 -translate-x-1/2 flex justify-between md:rounded-none items-center container-padding ">
             <div>
                 <Link href="/" className="flex items-center">
                     <Image
@@ -56,7 +56,7 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            <div className="hidden md:flex gap-8 item-center ">
+            <div className="hidden lg:flex gap-8 item-center ">
                 {navItems.map((item) => (
                     <button
                         key={item.name}
@@ -71,7 +71,7 @@ export default function Navbar() {
 
             </div>
             <button
-                className="md:hidden flex flex-col gap-1"
+                className="lg:hidden flex flex-col gap-1"
                 onClick={() => setMenuOpen(!menuOpen)}>
 
                 <span className="block w-6 h-0.5 bg-[#1A2B6D]"></span>
@@ -81,7 +81,7 @@ export default function Navbar() {
 
             <div
                 className={`
-                    absolute left-0 top-16 w-full md:hidden bg-[#00000015] backdrop-blur-[12px] rounded-b-[10px] flex flex-col gap-4 py-6 px-8 transition-all duration-300 origin-top
+                    absolute left-0 top-16 w-full lg:hidden bg-[#00000015] backdrop-blur-[12px] rounded-b-[10px] flex flex-col gap-4 py-6 px-8 transition-all duration-300 origin-top
                     ${menuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"}
                 `}
             >

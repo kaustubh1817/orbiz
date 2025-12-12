@@ -100,7 +100,7 @@ export default function Ourservices() {
           </p>
         </div>
            <img
-            src="/ourServices/ourSer-bottom.webp"
+            src="/ourServices/OurSer-bottom.webp"
             alt="bottom-box-image"
             className="absolute bottom-7 -right-10 hidden md:block"
           />
