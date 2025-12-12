@@ -125,7 +125,7 @@ export default function Whoweare() {
             {leaders.map((leader) => (
               <div
                 key={leader.id}
-                className="bg-white p-8 rounded-[2px] flex flex-col gap-6"
+                className="bg-white p-6 rounded-[2px] w-[90%] flex flex-col mx-auto gap-6"
               >
                 <div className="flex gap-6 md:gap-10 items-center  justify-center">
                   <img

@@ -43,14 +43,15 @@ export default function Ourservices() {
       </div>
       <div className="w-full flex flex-col section-block-padding container-padding ">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
-          <div className="w-full md:w-[35%] flex justify-center">
+          <div className="w-full md:w-[35%] mt-4 flex justify-center">
             <img
               src="/images/service_2.png"
               alt="Platform Strategy"
               className="w-[70%] object-contain "
             />
           </div>
-          <div className="w-full md:w-[65%] flex flex-col">
+
+          <div className="w-full pt-8 md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Cloud Scaling</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
             <p className="fl4 mb-0 md:mb-12 text-justify">
@@ -148,14 +149,14 @@ export default function Ourservices() {
 
       <div className="w-full flex flex-col section-block-padding container-padding ">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
-          <div className="w-full md:w-[35%] flex justify-center">
+          <div className="w-full md:w-[35%] pt-8 flex justify-center">
             <img
               src="/images/service_4.png"
               alt="Platform Strategy"
               className="w-[70%] object-contain "
             />
           </div>
-          <div className="w-full md:w-[65%] flex flex-col">
+          <div className="w-full md:w-[65%]  flex flex-col">
             <p className="fl2 mb-4">Product Engineering</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
             <p className="fl4 mb-0 md:mb-12 text-justify">
@@ -244,7 +245,7 @@ export default function Ourservices() {
 
       <div className="w-full flex flex-col container-padding section-block-padding">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
-          <div className="w-full md:w-[35%] flex justify-center">
+          <div className="w-full md:w-[35%] mt-8  flex justify-center">
             <img
               src="/images/service_6.png"
               alt="Platform Strategy"
@@ -272,7 +273,7 @@ export default function Ourservices() {
               that propel your business toward enhanced collaboration and
               sustained growth.
             </p>
-            <a href="/contact" className="blu-conn">
+            <a href="/contact" className="blu-conn mb-8 ">
               Connect
               <img src="icons\arrow2.svg" alt="arrow" className="size-5" />
             </a>

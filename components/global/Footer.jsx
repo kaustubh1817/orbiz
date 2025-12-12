@@ -50,7 +50,7 @@ export default function Footer() {
                   <img
                     src="/landing/email.png"
                     alt="email"
-                    className="w-full h-auto flex-shrink-0"
+                    className="w-full  h-auto flex-shrink-0"
                   />
                 </div>
                 <input
@@ -59,7 +59,7 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="flex-1 px-4 py-4 md:py-0 outline-none"
+                  className="flex-1 px-3 py-4 md:py-0 outline-none"
                 />
               </div>
               <button

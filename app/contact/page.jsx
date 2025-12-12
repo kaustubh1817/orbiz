@@ -11,7 +11,7 @@ export const metadata = {
     siteName: 'Orbiz',
     images: [
       {
-        url: "/service9.png",
+        url: "/images/service9.png",
         width: 1200,
         height: 630,
         alt: "Contact | Orbiz",
@@ -25,7 +25,7 @@ export const metadata = {
     title: "Contact | Orbiz",
     description:
       "At Orbiz, we pride ourselves on delivering high-quality service to every client. Our goal is to exceed your expectations and provide you with the best possible experience.",
-    images: ["/service9.png"],
+    images: ["/images/service9.png"],
   },
 };
 

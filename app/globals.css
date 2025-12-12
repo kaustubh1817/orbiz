@@ -164,7 +164,7 @@ body {
   }
 
   .blu-conn {
-   @apply  text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D] w-fit px-8 py-2 mt-8 flex items-center justify-center gap-4 mx-auto md:mx-0
+   @apply  text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D] w-fit px-8 py-2 mt-12 flex items-center justify-center gap-4 mx-auto md:mx-0
   }
 
 }
