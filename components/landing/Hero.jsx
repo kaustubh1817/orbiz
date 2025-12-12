@@ -102,6 +102,9 @@ export default function Hero() {
             className="absolute bottom-17.5 md:-bottom-0 right-0 md:right-2 md:mb-9 md:h-17 md:w-42 h-9 w-21"
           />
         </div>
+         {/* <a href="/services" className="md:hidden block red-btn mt-5 md:mt-10 mx-auto md:mx-0">
+            Learn More
+          </a> */}
       </div>
     </section>
   );

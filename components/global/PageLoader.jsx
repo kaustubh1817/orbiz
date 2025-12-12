@@ -4,9 +4,9 @@ const Skeleton = ({ className }) => (
   <div className={`animate-pulse bg-gray-400 rounded ${className}`} />
 );
 
-const PageLoader = ({ text = "Please Wait" }) => {
+const PageLoader = () => {
   return (
-    <div className="fixed inset-0 z-[999999999999] flex items-center justify-center backdrop-blur-[12px] bg-white/80">
+    <div className="fixed inset-0 z-[999999999999] flex items-center justify-center bg-white">
       
       <div className="absolute inset-0 flex flex-col items-center px-6 py-10 gap-6 opacity-50 overflow-y-auto">
         <Skeleton className="w-full max-w-2xl h-64 rounded-xl" />
@@ -22,13 +22,6 @@ const PageLoader = ({ text = "Please Wait" }) => {
           <Skeleton className="h-4 w-10/12" />
         </div>
       </div>
-
-      {/* <div className="relative z-10 flex flex-col items-center">
-        <Loading />
-        <p className="font-bold text-center mt-5 md:hidden text-xl md:text-2xl animate-pulse">
-          {text}
-        </p>
-      </div> */}
     </div>
   );
 };

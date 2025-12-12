@@ -45,8 +45,8 @@ export default function Footer() {
             className="md:w-full w-75 mx-auto bg-white p-2"
           >
             <div className="flex flex-col md:flex-row md:justify-between md:max-h-16">
-              <div className="flex flex-row items-center md:pl-5 pl-3">
-                <div className="size-4md:size-6.5 flex justify-center items-center">
+              <div className="flex flex-row items-center md:pl-5 pl-4">
+                <div className="size-6 md:size-6.5 flex justify-center items-center">
                   <img
                     src="/landing/email.png"
                     alt="email"
@@ -93,6 +93,14 @@ export default function Footer() {
                   alt="Orbiz"
                   width={90}
                   height={45}
+                  className="hidden md:block"
+                />
+                <Image
+                  src="/orbiz_logo.png"
+                  alt="Orbiz"
+                  width={70}
+                  height={30}
+                  className="md:hidden block"
                 />
               </Link>
             </div>
@@ -109,13 +117,13 @@ export default function Footer() {
                   <img
                     src={social.icon}
                     alt={social.name}
-                    className="size-6 hover:scale-101 transition-transform duration-300"
+                    className="md:size-6 size-4 hover:scale-101 transition-transform duration-300"
                   />
                 </a>
               ))}
             </div>
           </div>
-          <div className="flex flex-row md:justify-between gap-50 md:gap-0 sm:gap-0">
+          <div className="flex flex-row justify-around gap-10 md:gap-57">
             <div className="flex flex-col gap-3 justify-center items-center">
               <h4 className="fl5 mb-0 md:mb-4">Company</h4>
               <ul className="space-y-2">
@@ -136,7 +144,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-3 justify-center items-center ">
+            <div className="flex flex-col gap-3 items-center">
               <h4 className="fl5 mb-0 md:mb-4">Links</h4>
               <ul className="space-y-2">
                 <li>
@@ -156,16 +164,16 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="flex flex-col gap-3 items-center ">
-            <h4 className="fl5 mb-0 md:mb-4">Contact</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="mailto:contact@orbiz.one" className="fl4">
-                  contact@orbiz.one
-                </a>
-              </li>
-            </ul>
+            <div className="flex flex-col gap-3 items-center ">
+              <h4 className="fl5 mb-0 md:mb-4">Contact</h4>
+              <ul className="space-y-2">
+                <li>
+                  <a href="mailto:contact@orbiz.one" className="fl4">
+                    contact@orbiz.one
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

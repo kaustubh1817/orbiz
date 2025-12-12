@@ -36,7 +36,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="w-full md:h-[94px] bg-[#F5F5F5] py-3 fixed top-0 z-[10000] left-1/2 -translate-x-1/2 flex justify-between  md:rounded-none items-center container-padding ">
+        <nav className="w-full lg:h-[94px] bg-[#F5F5F5] py-3 fixed top-0 z-[10000] left-1/2 -translate-x-1/2 flex justify-between md:rounded-none items-center container-padding ">
             <div>
                 <Link href="/" className="flex items-center">
                     <Image
@@ -44,11 +44,19 @@ export default function Navbar() {
                         alt="Orbiz"
                         width={100}
                         height={50}
+                        className="hidden md:block"
+                    />
+                     <Image
+                        src="/orbiz_logo.png"
+                        alt="Orbiz"
+                        width={80}
+                        height={40}
+                        className="md:hidden block"
                     />
                 </Link>
             </div>
 
-            <div className="hidden md:flex gap-8 item-center ">
+            <div className="hidden lg:flex gap-8 item-center ">
                 {navItems.map((item) => (
                     <button
                         key={item.name}
@@ -63,7 +71,7 @@ export default function Navbar() {
 
             </div>
             <button
-                className="md:hidden flex flex-col gap-1"
+                className="lg:hidden flex flex-col gap-1"
                 onClick={() => setMenuOpen(!menuOpen)}>
 
                 <span className="block w-6 h-0.5 bg-[#1A2B6D]"></span>
@@ -73,7 +81,7 @@ export default function Navbar() {
 
             <div
                 className={`
-                    absolute right-0 top-18.5 w-[50%] md:hidden  bg-[#F5F5F5]  flex flex-col gap-4 py-6 px-8 transition-all duration-300 origin-top
+                    absolute left-0 top-16 w-full lg:hidden bg-[#00000015] backdrop-blur-[12px] rounded-b-[10px] flex flex-col gap-4 py-6 px-8 transition-all duration-300 origin-top
                     ${menuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"}
                 `}
             >
@@ -85,8 +93,8 @@ export default function Navbar() {
                             w-full text-left text-lg py-2
                             transition-all duration-200
                             ${activeLink === item.name
-                                ? "text-[#1A2B6D] font-semibold"
-                                : "text-[#000000]"
+                                ? "text-[#1A2B6D] text-[12px] md:text-[18px] font-poppins-medium"
+                                : "text-[#000000] text-[12px] md:text-[18px] font-poppins-medium"
                             }
                         `}
                     >

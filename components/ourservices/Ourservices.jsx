@@ -5,7 +5,7 @@ export default function Ourservices() {
         <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full px-10">
           Partner with us, and let Innovation be the Propulsive force
         </p>
-      <div className="w-full flex flex-col container-padding">
+      <div className="w-full flex flex-col section-block-padding container-padding">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -41,7 +41,7 @@ export default function Ourservices() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col section-block-padding container-padding">
+      <div className="w-full flex flex-col section-block-padding container-padding ">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] mt-4 flex justify-center">
             <img
@@ -101,13 +101,13 @@ export default function Ourservices() {
           </p>
         </div>
            <img
-            src="/ourServices/ourSer-bottom.webp"
+            src="/ourServices/OurSer-bottom.webp"
             alt="bottom-box-image"
             className="absolute bottom-7 -right-10 hidden md:block"
           />
       </div>
 
-      <div className="w-full flex flex-col  section-block-padding container-padding">
+      <div className="w-full flex flex-col  section-block-padding container-padding mt-9 md:mt-0">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -147,7 +147,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col section-block-bottom container-padding ">
+      <div className="w-full flex flex-col section-block-padding container-padding ">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] pt-8 flex justify-center">
             <img
@@ -184,7 +184,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="relative w-full flex flex-col mt-4 lg:flex-row items-center section-block-bottom">
+      <div className="relative w-full flex flex-col lg:flex-row items-center section-block-padding">
         <img
           src="/images/service9.png"
           alt="service9"
@@ -206,8 +206,8 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col section-block-padding container-padding mt-15 md:mt-0">
-        <div className="bg-[#F5F5F5] mt-8 md:mt-0 p-8 md:p-12 flex flex-col md:flex-row gap-12">
+      <div className="w-full flex flex-col section-block-padding container-padding mt-25 md:mt-20">
+        <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
               src="/images/service_5.png"
@@ -243,7 +243,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col container-padding">
+      <div className="w-full flex flex-col container-padding section-block-padding">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] mt-8  flex justify-center">
             <img
