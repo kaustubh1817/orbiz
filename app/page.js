@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Home | Orbiz',
     description: 'At Orbiz, we pride ourselves on delivering high-quality service to every client. Our goal is to exceed your expectations and provide you with the best possible experience.',
-    url: 'https://orbiz.in/Home',
+    url: 'https://orbiz-sigma.vercel.app/',
     siteName: 'Orbiz',
     images: [
       {

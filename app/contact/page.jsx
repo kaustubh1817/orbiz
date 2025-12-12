@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: 'Contact | Orbiz',
     description: 'At Orbiz, we pride ourselves on delivering high-quality service to every client. Our goal is to exceed your expectations and provide you with the best possible experience.',
-    url: 'https://orbiz.in/Contact',
+    url: 'https://orbiz-sigma.vercel.app/contact',
     siteName: 'Orbiz',
     images: [
       {

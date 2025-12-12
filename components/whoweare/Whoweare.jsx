@@ -114,13 +114,14 @@ export default function Whoweare() {
         </div>
       </div>
 
-      <div className="bg-[#F5F5F5] relative mt-6 md:p-10">
-        <p className="fl1 flex justify-center title-content-gap mb-12">
+      <div className="bg-[#F5F5F5] relative mt-6 py-10 section-block-bottom ">
+        <p className="fl1 flex justify-center mb-10 ">
           Leadership Team
         </p>
 
-        <div className="w-full flex justify-center">
-          <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+        <div className="w-full flex justify-center container-padding">
+          <div className="grid md:w-full grid-cols-1 md:grid-cols-2 gap-10 md:gap-20"
+          >
             {leaders.map((leader) => (
               <div
                 key={leader.id}
@@ -137,7 +138,7 @@ export default function Whoweare() {
                     <p className="fl4">{leader.role}</p>
                   </div>
                 </div>
-                <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
+                <div className="w-full h-[1px] bg-[#1A2B6D4D]"></div>
                 <p className="fl4 text-justify">{leader.desc}</p>
               </div>
             ))}
