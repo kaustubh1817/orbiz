@@ -123,7 +123,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="flex flex-row justify-around gap-10 md:gap-57">
+          <div className="flex flex-row justify-around gap-6 md:gap-57">
             <div className="flex flex-col gap-3 justify-center items-center">
               <h4 className="fl5 mb-0 md:mb-4">Company</h4>
               <ul className="space-y-2">
