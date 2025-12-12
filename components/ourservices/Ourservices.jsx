@@ -93,7 +93,7 @@ export default function Ourservices() {
           className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
         />
         <div className="bg-[#1A2B6D] absolute bottom-1 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] md:w-[75%] lg:w-[60%] p-5 sm:p-8 md:p-10">
-          <p className="fl4 !text-white text-justify">
+          <p className="fl6 !text-white text-justify">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that
@@ -192,7 +192,7 @@ export default function Ourservices() {
         />
 
         <div className="absolute md:static w-[90%] p-5 sm:p-8 md:p-10 lg:absolute lg:right-0 -bottom-15 md:bottom-45 lg:-translate-y-1/2 bg-[#1A2B6D] lg:w-[45%]">
-          <p className="!text-white fl4 text-justify">
+          <p className="!text-white fl6 text-justify">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that

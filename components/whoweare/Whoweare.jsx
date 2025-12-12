@@ -38,9 +38,10 @@ export default function Whoweare() {
           the most cutting-edge solutions available.
         </p>
       </div>
-
-      <p className="fl1 flex justify-center section-block-top py-5 md:py-10 3xl:py-16">Our Strengths</p>
-
+      <div className="section-block-top container-padding">
+        <div className="w-full h-[1px] bg-[#1A2B6D4D]"></div>
+        <p className="fl1 flex justify-center  py-5 md:py-10 3xl:py-16">Our Strengths</p>
+      </div>
       <div className="w-full flex flex-col section-block-bottom container-padding">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-1/2 flex justify-center">
@@ -139,7 +140,7 @@ export default function Whoweare() {
                   </div>
                 </div>
                 <div className="w-full h-[1px] bg-[#1A2B6D4D]"></div>
-                <p className="fl4 text-justify">{leader.desc}</p>
+                <p className="fl6 text-justify">{leader.desc}</p>
               </div>
             ))}
           </div>

@@ -5,6 +5,7 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
 .dark {
   --background: #171717;
   --foreground: #ffffff;
@@ -46,7 +47,7 @@ body {
     font-weight: 300;
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "PoppinsMedium";
     src: url("/fonts/Poppins/Poppins-Medium.ttf");
@@ -54,14 +55,14 @@ body {
     font-display: swap;
   }
 
-   @font-face {
+  @font-face {
     font-family: "PoppinsSemiBold";
     src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
     font-weight: 600;
     font-display: swap;
   }
 
-   @font-face {
+  @font-face {
     font-family: "PoppinsBold";
     src: url("/fonts/Poppins/Poppins-Bold.ttf");
     font-weight: 700;
@@ -71,7 +72,7 @@ body {
 
 @theme {
 
-   /* FONT SIZE */
+  /* FONT SIZE */
   --text-10: 10px;
   --text-11: 11px;
   --text-12: 12px;
@@ -112,7 +113,7 @@ body {
 }
 
 @layer utilities {
-    .container-padding {
+  .container-padding {
     @apply px-10 md:px-18 2xl:px-18 3xl:px-22;
   }
 
@@ -127,21 +128,22 @@ body {
   .section-block-bottom {
     @apply pb-10 md:pb-16 3xl:pb-22;
   }
+
   .title-content-gap {
     @apply mb-6 md:mb-8 3xl:mb-10;
   }
 
   .nav-text {
-    @apply text-[12px] md:text-[18px] font-poppins-medium text-[#1A2B6D] ;
+    @apply text-[12px] md:text-[18px] font-poppins-medium text-[#1A2B6D];
   }
 
   .nav-active-text {
-    @apply  text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D] 
+    @apply text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D]
   }
 
   .fl1 {
-  @apply text-[22px] md:text-[32px] font-poppins-semibold text-[#1A2B6D] ;
-}
+    @apply text-[22px] md:text-[32px] font-poppins-semibold text-[#1A2B6D];
+  }
 
   .fl2 {
     @apply text-[18px] md:text-[28px] font-poppins-medium text-[#1A2B6D]
@@ -159,12 +161,16 @@ body {
     @apply text-[12px] md:text-[20px] font-poppins-semibold text-[#1A2B6D]
   }
 
+  .fl6 {
+    @apply text-[10px] md:text-[14px] font-poppins-light text-[#1A2B6D]
+  }
+
   .red-btn {
     @apply text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#D41317] rounded-[2px] px-8 py-2 w-fit
   }
 
   .blu-conn {
-   @apply  text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D] w-fit px-8 py-2 mt-12 flex items-center justify-center gap-4 mx-auto md:mx-0
+    @apply text-[12px] md:text-[18px] font-poppins-medium text-[#FFFFFF] bg-[#1A2B6D] w-fit px-8 py-2 mt-12 flex items-center justify-center gap-4 mx-auto md:mx-0
   }
 
 }
@@ -178,8 +184,8 @@ body {
 .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
-  background-color: #FFFFFF  !important;
-  border: 1px solid #1A2B6D  !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #1A2B6D !important;
   opacity: 1;
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -188,20 +194,20 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #1A2B6D  !important;
+  background-color: #1A2B6D !important;
   width: 25px;
   border-radius: 50%;
-  transition:all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 768px){
-  .swiper-pagination-bullet{
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    margin:  0 5px;
+    margin: 0 5px;
   }
 
-  .swiper-pagination-bullet-active{
+  .swiper-pagination-bullet-active {
     width: 16px;
     border-radius: 10px;
   }
@@ -209,7 +215,7 @@ body {
 
 .service-swiper {
   overflow: hidden;
-  padding-bottom:  16px;
+  padding-bottom: 16px;
 }
 
 .service-swiper .swiper-wrapper {
@@ -315,14 +321,14 @@ body {
 }
 
 .arrow-btn {
-  @apply bg-[#1a2362] text-white  w-12 h-12 
-  flex items-center justify-center text-2xl font-bold;
+  @apply bg-[#1a2362] text-white w-12 h-12 flex items-center justify-center text-2xl font-bold;
 }
 
 .testimonial-slick .slick-list .slick-track {
   display: flex;
   gap: 80px;
 }
+
 .testimonial-slick .slick-dots {
   bottom: -50px;
   width: fit-content;
@@ -330,17 +336,20 @@ body {
   right: 0;
   margin: auto;
 }
+
 .testimonial-slick .slick-dots li button:before {
   font-size: 15px;
   color: #FFFFFF;
   opacity: 1;
 }
+
 .testimonial-slick .slick-dots li.slick-active button:before {
   color: #1A2B6D;
-  
-  
+
+
 
 }
+
 .testimonial-slick .slick-prev,
 .testimonial-slick .slick-next {
   top: unset;
@@ -348,12 +357,15 @@ body {
   margin: auto;
   font-size: 25px;
 }
+
 .testimonial-slick .slick-prev {
   left: 35vw;
 }
+
 .testimonial-slick .slick-next {
   right: 35vw;
 }
+
 .testimonial-slick .slick-prev::before,
 .testimonial-slick .slick-next::before {
   content: '';
@@ -363,8 +375,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  filter: invert(56%) sepia(25%) saturate(1094%) hue-rotate(360deg)
-    brightness(92%) contrast(95%);
+  filter: invert(56%) sepia(25%) saturate(1094%) hue-rotate(360deg) brightness(92%) contrast(95%);
 }
 
 
@@ -373,38 +384,47 @@ body {
     gap: 60px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   #footer {
     background-size: 0;
   }
+
   .testimonial-slick .slick-list .slick-track {
     gap: 30px;
   }
+
   .testimonial-slick .slick-prev {
     left: 20vw;
   }
+
   .testimonial-slick .slick-next {
     right: 20vw;
   }
 }
+
 @media screen and (max-width: 640px) {
   .hero-social .right-shape::after {
     right: -30px;
     width: 30px;
     height: 30px;
   }
+
   .hero-social .right-shape::before {
     right: -15px;
     width: 50px;
     height: 15px;
   }
+
   .testimonial-slick .slick-prev {
     left: 75px;
   }
+
   .testimonial-slick .slick-next {
     right: 75px;
   }
 }
+
 .fun-swiper .swiper-slide {
   transition: transform 0.35s ease, opacity 0.35s ease;
   display: flex;
@@ -415,7 +435,7 @@ body {
   width: 100%;
   height: 600px;
   max-width: 400px;
-  
+
   overflow: hidden;
   position: relative;
 }
@@ -425,7 +445,7 @@ body {
   transform: scale(1);
   opacity: 1;
   z-index: 3;
-  
+
 }
 
 /* LEFT + RIGHT SLIDES */

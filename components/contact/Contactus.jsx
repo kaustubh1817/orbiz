@@ -14,11 +14,11 @@ export default function Contactus() {
       <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
       <div className="w-full bg-[#f5f5f5]  p-4">
         <div className="w-full flex flex-col md:flex-row gap-10 items-center">
-          <div className="w-full md:w-[40%] flex flex-col gap-12 items-center ">
+          <div className="w-full md:w-[40%] flex flex-col gap-16 items-center ">
             <div className="flex flex-col gap-4">
               <h2 className="fl2">Get in touch with us</h2>
 
-              <p className="fl4 max-w-[350px] text-justify ">
+              <p className="fl6 max-w-[350px] text-justify ">
                 Thank you for your interest in Orbiz. Whether you’re a client,
                 job seeker, journalist, analyst or investor, you can find the
                 best way to contact us below.
@@ -34,7 +34,7 @@ export default function Contactus() {
                 <h3 className="fl2">Clients</h3>
               </div>
 
-              <p className="fl4 max-w-[350px] text-justify ">
+              <p className="fl6 max-w-[350px] text-justify ">
                 Find out more on how we can help you to get the future you want
                 in through our industry expertise, services, and technology
                 partners.
@@ -89,11 +89,11 @@ export default function Contactus() {
                 <img src="/icons/mail.svg" className="size-7" alt="Chat Icon" />
                 <h3 className="fl2 !text-white">Chat with Us</h3>
               </div>
-              <p className="fl4 !text-white">
+              <p className="fl6 !text-white">
                 Email:&nbsp;
                 <a
                   href="mailto:contact@orbiz.one"
-                  className="underline fl4 !text-white"
+                  className="underline fl6 !text-white"
                 >
                   contact@orbiz.one
                 </a>
@@ -107,7 +107,7 @@ export default function Contactus() {
                 <img src="/icons/job.svg" className="size-7" alt="Job Icon" />
                 <h3 className="fl2 !text-white">Job Seekers</h3>
               </div>
-              <p className="fl4 !text-white text-justify">
+              <p className="fl6 !text-white text-justify">
                 Please refer following link to know more about Orbiz culture and
                 career opportunities.
               </p>
@@ -136,7 +136,7 @@ export default function Contactus() {
                 />
                 <h3 className="fl2 !text-white">Head Office</h3>
               </div>
-              <p className="fl4 !text-white text-justify">
+              <p className="fl6 !text-white text-justify">
                 Orbiz Analytics India Pvt. Ltd. Plot No. 52, Suman Ankur
                 complex, Shayadri Farm, Baner Road, Baner, Pune 411045
               </p>

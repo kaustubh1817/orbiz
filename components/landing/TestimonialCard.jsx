@@ -5,7 +5,7 @@ const TestimonialCard = () => {
         <div className="bg-white rounded-[2px] px-4 sm:px-10 py-5 flex flex-col gap-3 sm:gap-5 lg:gap-8">
             <div className="flex gap-3 sm:gap-5 items-center flex-col sm:flex-row">
 
-                <p className="fl4 text-left md:text-justify p-2 sm:p-6">
+                <p className="fl6 text-left md:text-justify p-2 sm:p-6">
                     "Orbiz Analytics proved to be the right choice from the start, exceeding expectations with unparalleled dedication and expertise during a critical period. Their strategic thinking, coupled with deep technical proficiency, transformed them into true partners, improving efficiency, addressing bottlenecks, and enhancing our software architecture for long-term resilience. Highly recommended for top-notch software development services, Orbiz Analytics catalyzed a broader shift in our approach towards technology and innovation.".{' '}
                 </p>
             </div>

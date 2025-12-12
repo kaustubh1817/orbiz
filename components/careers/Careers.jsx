@@ -51,7 +51,7 @@ export default function Careers() {
       <div className="w-full flex flex-col md:flex-row gap-10 md:px-18 2xl:px-18 3xl:px-22 section-block-padding">
         <div className="flex flex-col w-full md:w-1/2 relative justify-center container-padding">
           <img
-            src="/landing/careers3.png"
+            src="/landing/careers4.png"
             alt="Background Shape"
             className="w-full h-auto object-contain"
           />
