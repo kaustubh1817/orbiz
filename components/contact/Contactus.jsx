@@ -14,7 +14,7 @@ export default function Contactus() {
       <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
       <div className="w-full bg-[#f5f5f5]  p-4">
         <div className="w-full flex flex-col md:flex-row gap-10 items-center">
-          <div className="w-full md:w-[40%] flex flex-col gap-8 md:gap-16 items-center ">
+          <div className="w-full md:w-1/2 flex flex-col gap-8 md:gap-16 items-center ">
             <div className="flex flex-col gap-4">
               <h2 className="fl2">Get in touch with us</h2>
 
@@ -41,39 +41,75 @@ export default function Contactus() {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-[60%] pb-4 md:p-10">
-            <div className="p-4 md:p-8 bg-white  ">
-              <div className="flex flex-col md:flex-row gap-4 mb-4">
+          <div className="w-full md:w-1/2 pb-4 md:p-10">
+            <div className="p-6 md:p-8 bg-white rounded-xs">
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                    First Name *
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Ex. Amy"
+                    className="w-full bg-[#F5F5F5] p-3 fl4"
+                  />
+                </div>
+
+                <div>
+                  <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                    Last Name *
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Ex. West"
+                    className="w-full bg-[#F5F5F5] p-3 fl4"
+                  />
+                </div>
+              </div>
+
+              
+              <div className="mb-6">
+                <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                  Email Address *
+                </label>
                 <input
-                  type="text"
-                  placeholder="First Name *"
-                  className="w-full fl4 bg-[#f5f5f5] p-3"
-                />
-                <input
-                  type="text"
-                  placeholder="Last Name *"
-                  className="w-full fl4 bg-[#f5f5f5] p-3"
+                  type="email"
+                  placeholder="example@gmail.com"
+                  className="w-full bg-[#F5F5F5] p-3 fl4"
                 />
               </div>
-              <input
-                type="email"
-                placeholder="Email Id *"
-                className="w-full fl4 bg-[#f5f5f5] p-3 mb-4 "
-              />
-              <input
-                type="text"
-                placeholder="Company Name"
-                className="w-full fl4 mb-4 bg-[#f5f5f5] p-3"
-              />
-              <textarea
-                rows={5}
-                placeholder="Message"
-                className="w-full fl4 mb-6 bg-[#f5f5f5] p-3"
-              ></textarea>
-              <button className="w-full fl3 bg-[#1A2B6D] text-white py-3">
+
+              
+              <div className="mb-6">
+                <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                  Company Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Ex. Orbiz"
+                  className="w-full bg-[#F5F5F5] p-3 fl4"
+                />
+              </div>
+
+              
+              <div className="mb-8">
+                <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                  Message
+                </label>
+                <textarea
+                  rows={6}
+                  placeholder="********"
+                  className="w-full bg-[#F5F5F5] p-3 fl4 resize-none"
+                />
+              </div>
+
+              
+              <button className="w-full bg-[#1A2B6D] !text-white py-3 fl3">
                 Send
               </button>
             </div>
+
           </div>
         </div>
       </div>
