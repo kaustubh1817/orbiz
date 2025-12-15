@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Hero from '../components/landing/Hero.jsx';
+import Herov2 from "@/components/landing/HeroV2.jsx";
 import Ourservices from "../components/landing/Ourservices.jsx"
 import Connect from "../components/landing/Connect.jsx"
 import BackToTop from "@/components/BackToTop";
 import TestimonialV2 from "@/components/landing/TestimonialV2.jsx";
+import Launching from "@/components/landing/Launching.jsx";
 
 export const metadata = {
   title: 'Home | Orbiz',
@@ -35,7 +36,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Hero />
+      <Herov2 />
+      {/* <Launching /> */}
       <Ourservices />
       <Connect />
       <TestimonialV2 />
