@@ -39,7 +39,7 @@ export default function Ourservices() {
               }}
             >
               <div
-                className="absolute -top-2 -left-1.5 3xl:-top-1 3xl:-left-0.5 md:w-35 md:h-19 3xl:w-43 3xl:h-23 z-10 flex items-center justify-center"
+                className="absolute -top-2 -left-1.5 3xl:-top-1 3xl:-left-0.5 md:-top-0.5 md:-left-0.5 md:w-35 md:h-18.5 3xl:w-43 3xl:h-23 z-10 flex items-center justify-center"
                 style={{
                   backgroundImage:
                     "url(/landing/ourservices/OurServices-top-bg.webp)",
@@ -55,7 +55,7 @@ export default function Ourservices() {
                 />
               </div>
 
-              <div className="pt-28 md:pt-32 px-12 pb-6">
+              <div className="pt-28 md:pt-32 px-11 pb-6">
                 <h2 className="fl2 mb-3 text-[#1A2B6D]">{service.title}</h2>
 
                 <div className="w-full h-[1px] bg-[#1A2B6D]/20 mb-3"></div>
