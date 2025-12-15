@@ -30,23 +30,16 @@ export default function Ourservices() {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="relative flex flex-col h-full md:h-103 shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="relative flex flex-col h-full md:h-103 transition-shadow duration-300"
               style={{
                 backgroundImage:
-                  "url(/landing/ourservices/OurServices-bg.webp)",
+                  "url(/landing/ourservices/OurServices-bg-full.png)",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
               }}
             >
               <div
                 className="absolute -top-2 -left-1.5 3xl:-top-1 3xl:-left-0.5 md:-top-0.5 md:-left-0.5 md:w-35 md:h-18.5 3xl:w-43 3xl:h-23 z-10 flex items-center justify-center"
-                style={{
-                  backgroundImage:
-                    "url(/landing/ourservices/OurServices-top-bg.webp)",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
               >
                 <img
                   src={service.icon}
