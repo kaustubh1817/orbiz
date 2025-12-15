@@ -121,7 +121,7 @@ export default function Whoweare() {
         </p>
 
         <div className="w-full flex justify-center container-padding">
-          <div className="grid md:w-full grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10"
+          <div className="grid md:w-[90%] grid-cols-1 md:grid-cols-2 gap-8 lg:gap-0"
           >
             {leaders.map((leader) => (
               <div
@@ -132,15 +132,18 @@ export default function Whoweare() {
                   <img
                     src={leader.image}
                     alt={leader.name}
-                    className="w-25 h-25 rounded-full object-cover"
+                    className="size-25 md:size-35 rounded-full object-cover"
                   />
                   <div className="text-left">
                     <h3 className="fl2">{leader.name}</h3>
                     <p className="fl4">{leader.role}</p>
                   </div>
                 </div>
-                <div className="w-full h-[1px] bg-[#1A2B6D4D]"></div>
-                <p className="fl6 text-justify">{leader.desc}</p>
+                <div className="w-[95%] mx-auto">
+                <div className="w-full  h-[1px] bg-[#1A2B6D4D]"></div>
+
+                <p className="fl6 text-justify py-6">{leader.desc}</p>
+                </div>
               </div>
             ))}
           </div>

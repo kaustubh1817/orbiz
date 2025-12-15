@@ -43,11 +43,7 @@ export default function Careers() {
         to delivering significant value in response to users' requirements,
         Orbiz offers an ideal professional milieu for your aspirations.
       </p>
-      <div className="w-full">
-        <a href="/careers" className="red-btn mt-10 md:mt-20 mx-auto block">
-          Start now
-        </a>
-      </div>
+     
 
       <div className="w-full flex flex-col md:flex-row gap-10 md:px-18 2xl:px-18 3xl:px-22 section-block-padding">
         <div className="flex flex-col w-full md:w-1/2 relative justify-center container-padding">

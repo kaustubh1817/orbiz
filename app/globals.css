@@ -328,27 +328,44 @@ body {
   display: flex;
   gap: 80px;
 }
+/* remove default slick dot */
+.testimonial-slick .slick-dots li button:before {
+  content: none;
+}
 
+/* dots wrapper */
 .testimonial-slick .slick-dots {
   bottom: -50px;
-  width: fit-content;
-  left: 0;
-  right: 0;
-  margin: auto;
+  display: flex !important;
+  justify-content: center;
 }
 
-.testimonial-slick .slick-dots li button:before {
-  font-size: 15px;
-  color: #FFFFFF;
-  opacity: 1;
+/* fixed slot for each dot */
+.testimonial-slick .slick-dots li {
+  width: 36px;
+  display: flex;
+  justify-content: center;
 }
 
-.testimonial-slick .slick-dots li.slick-active button:before {
-  color: #1A2B6D;
-
-
-
+/* base dot */
+.testimonial-slick .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #1A2B6D;
+  background: transparent;
+  padding: 0;
+  transition: all 0.3s ease;
 }
+
+/* active pill */
+.testimonial-slick .slick-dots li.slick-active button {
+  width: 36px;
+  border-radius: 20px;
+  background: #1A2B6D;
+  border-color: #1A2B6D;
+}
+
 
 .testimonial-slick .slick-prev,
 .testimonial-slick .slick-next {
@@ -424,67 +441,6 @@ body {
     right: 75px;
   }
 }
-
-.fun-swiper .swiper-slide {
-  transition: transform 0.35s ease, opacity 0.35s ease;
-  display: flex;
-  justify-content: center;
-}
-
-.fun-card {
-  width: 100%;
-  height: 600px;
-  max-width: 400px;
-
-  overflow: hidden;
-  position: relative;
-}
-
-/* CENTER SLIDE */
-.fun-swiper .swiper-slide-active .fun-card {
-  transform: scale(1);
-  opacity: 1;
-  z-index: 3;
-
-}
-
-/* LEFT + RIGHT SLIDES */
-.fun-swiper .swiper-slide-next .fun-card,
-.fun-swiper .swiper-slide-prev .fun-card {
-  transform: scale(0.8);
-  opacity: 0.75;
-  z-index: 2;
-}
-
-/* All outer slides */
-.fun-swiper .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev) .fun-card {
-  transform: scale(0.7);
-  opacity: 0.75;
-  z-index: 1;
-}
-
-/* Navigation buttons */
-.fun-nav-wrapper {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fun-nav {
-  width: 38px;
-  height: 38px;
-  background: #1A2B6D;
-  color: white;
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
 
 /* career page carousel 3D styling  */
 

@@ -14,7 +14,7 @@ export default function Contactus() {
       <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
       <div className="w-full bg-[#f5f5f5]  p-4">
         <div className="w-full flex flex-col md:flex-row gap-10 items-center">
-          <div className="w-full md:w-[40%] flex flex-col gap-16 items-center ">
+          <div className="w-full md:w-[40%] flex flex-col gap-8 md:gap-16 items-center ">
             <div className="flex flex-col gap-4">
               <h2 className="fl2">Get in touch with us</h2>
 
