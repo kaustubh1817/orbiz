@@ -483,3 +483,97 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+
+/* career page carousel 3D styling  */
+
+ .perspective {
+            perspective: 1200px;
+          }
+
+          .carousel-3d {
+            perspective: 1200px;
+          }
+
+          .carousel-item {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            border-radius: 2px;
+            overflow: hidden;
+            transition: all 600ms cubic-bezier(0.16, 1, 0.3, 1);
+            transform-origin: center;
+            user-select: none;
+            cursor: pointer;
+          }
+
+          .carousel-item.center {
+            width: 300px;
+            height: 400px;
+            z-index: 30;
+            transform: translateZ(100px) scale(1.1);
+            border-radius: 2px;
+            opacity: 1;
+          }
+
+          
+          .carousel-item.left-1 {
+            z-index: 20;
+            transform: translateX(-480px) translateZ(50px) scale(0.90);
+            opacity: 0.7;
+          }
+
+          .carousel-item.left-2 {
+            z-index: 10;
+            transform: translateX(-778px) translateZ(0px) scale(0.80);
+            opacity: 0.4;
+          }
+
+         
+          .carousel-item.right-1 {
+            z-index: 20;
+            transform: translateX(480px) translateZ(50px) scale(0.90) ;
+            opacity: 0.7;
+          }
+
+          .carousel-item.right-2 {
+            z-index: 10;
+            transform: translateX(778px) translateZ(0px) scale(0.80);
+            opacity: 0.4;
+          }
+
+          .carousel-item.hidden {
+            opacity: 0;
+            pointer-events: none;
+          }
+
+          
+          @media (max-width: 768px) {
+            .carousel-item {
+              width: 200px;
+              height: 275px;
+            }
+
+            .carousel-item.center {
+              width: 200px;
+              height: 275px;
+            }
+
+            .carousel-item.left-1 {
+              transform: translateX(-200px) translateZ(50px) scale(0.9)
+            }
+
+            .carousel-item.left-2 {
+              transform: translateX(-345px) translateZ(0px) scale(0.8)
+            }
+
+            .carousel-item.right-1 {
+              transform: translateX(200px) translateZ(50px) scale(0.9);
+            }
+          
+            .carousel-item.right-2 {
+              transform: translateX(345px) translateZ(0px) scale(0.8);
+            }
+          }
+        

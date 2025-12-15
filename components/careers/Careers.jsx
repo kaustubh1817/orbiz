@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
+import Carousel3D from "./Carousel3D"
 import BackToTop from "@/components/BackToTop";
 
 import "swiper/css";
@@ -25,7 +26,7 @@ const images = [
 
 export default function Careers() {
   return (
-    <main className="min-h-screen  section-block-padding">
+    <main className="min-h-screen  section-block-top">
       <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
         Orbiz: Where Passion Meets Progress
       </p>
@@ -99,66 +100,12 @@ export default function Careers() {
         </div>
       </div>
 
-      <section className="hidden md:block w-full section-block-padding bg-[#F5F5F5]">
-        <h2 className="text-center fl1 title-content-gap">Fun @ ORBiZ</h2>
-
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".fun-next",
-            prevEl: ".fun-prev",
-          }}
-          loop={true}
-          centeredSlides={true}
-          slidesPerView={5}
-          className="fun-swiper"
-        >
-          {images.map((src, index) => (
-            <SwiperSlide key={index}>
-              <div className="fun-card">
-                <Image src={src} alt="slider" fill className="object-cover" />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        <div className="flex justify-between items-center mt-10 mx-auto px-10">
-          <button className="fun-prev arrow-btn text-3xl">‹</button>
-          <button className="fun-next arrow-btn text-3xl">›</button>
-        </div>
-      </section>
-
-      <section className="md:hidden w-full section-block-padding bg-white">
-        <h2 className="text-center fl1 title-content-gap">Fun @ ORBiZ</h2>
-
-        <Swiper
-          modules={[Navigation]}
-          navigation={{
-            nextEl: ".fun-next",
-            prevEl: ".fun-prev",
-          }}
-          loop={true}
-          centeredSlides={true}
-          slidesPerView={1}
-          spaceBetween={5}
-          className="fun-swiper"
-        >
-          {images.map((src, index) => (
-            <SwiperSlide key={index}>
-              <div className="fun-card">
-                <Image src={src} alt="slider" fill className="object-cover" />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        <div className="flex justify-between items-center mt-10 mx-4">
-          <button className="fun-prev arrow-btn text-3xl">‹</button>
-          <button className="fun-next arrow-btn text-3xl">›</button>
-        </div>
-      </section>
+      <Carousel3D />
 
       <BackToTop />
+
+
+
     </main>
   );
 }

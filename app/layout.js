@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+         <link rel="icon" href="/orbiz_logo.ico" />
+      </head>
       <body>
         <Navbar />
         <div className="md:pt-23 pt-16">
