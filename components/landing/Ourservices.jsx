@@ -5,6 +5,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import servicesData from "../../data/ourservices-lan";
+import Link from 'next/link';
 
 export default function Ourservices() {
   const swiperRef = useRef(null);
@@ -54,7 +55,7 @@ export default function Ourservices() {
                 <div className="w-full h-[1px] bg-[#1A2B6D]/20 mb-3"></div>
 
                 <p className="fl6 text-gray-600 h-35 text-justify">{service.description}</p>
-                <a
+                <Link
                   href={service.href}
                   className="fl3 w-full flex justify-between items-center text-[#E31E24] gap-2 hover:gap-3 transition-all duration-200 "
                 >
@@ -65,7 +66,7 @@ export default function Ourservices() {
                     alt="arrow"
                     className="w-6 h-auto"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -138,7 +139,7 @@ export default function Ourservices() {
                   <h2 className="fl2 flex justify-center pt-15">{service.title}</h2>
                   <div className="w-full h-[1px] bg-[#1A2B6D4D]"></div>
                   <p className="fl4 flex-grow">{service.description}</p>
-                  <a href={service.href} className="fl3 text-[#E31E24] flex justify-between">
+                  <Link href={service.href} className="fl3 text-[#E31E24] flex justify-between">
                     Learn More
                     <span>
                       <img
@@ -146,7 +147,7 @@ export default function Ourservices() {
                         alt="arrow-right-red"
                       />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </SwiperSlide>
             ))}
