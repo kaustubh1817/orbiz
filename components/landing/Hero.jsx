@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -76,6 +77,20 @@ const imageSets = [
 
 export default function Hero() {
   const [currentSet, setCurrentSet] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const checkScreen = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  checkScreen(); // initial check
+  window.addEventListener("resize", checkScreen);
+
+  return () => window.removeEventListener("resize", checkScreen);
+}, []);
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -88,7 +103,7 @@ export default function Hero() {
   return (
     <section className="pl-10 md:pl-18 2xl:pl-18 3xl:pl-22 relative py-10 md:py-0 3xl:py-0 overflow-hidden">
       <div className="flex flex-col md:flex-row w-full text-center md:text-left gap-10">
-        
+
         <div className="flex flex-col w-full md:w-1/2 justify-center gap-10 pr-10 md:pr-0">
           <h1 className="fl1">
             Innovation to Execution: Accelerate your Technology Development
@@ -104,7 +119,7 @@ export default function Hero() {
           </a>
         </div>
 
-        
+
         <div className="relative flex flex-col w-full md:w-1/2 md:h-[625px] 3xl:h-[750px] h-[445px] overflow-hidden">
 
           <img
@@ -113,35 +128,37 @@ export default function Hero() {
             className="absolute 3xl:top-12 md:top-10 top-0 right-52 3xl:right-98.5 md:right-82.5 md:h-17 md:w-42 h-18 w-42"
           />
 
-          <AnimatePresence mode="wait">
-            {imageSets[currentSet].map((img, idx) => (
-              <motion.img
-                key={`${currentSet}-${idx}`}
-                src={img.src}
-                alt={img.alt}
-                className={img.className}
-                initial={{
-                  opacity: 0,
-                  x: img.fromX ?? 0,
-                  y: img.fromY ?? 0,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  x: img.fromX ? -img.fromX : 0,
-                  y: img.fromY ? -img.fromY : 0,
-                }}
-                transition={{
-                  duration: 0.8,
-                  ease: "easeInOut",
-                }}
-              />
-            ))}
-          </AnimatePresence>
+         <AnimatePresence mode="wait">
+  {imageSets[currentSet].map((img, idx) => {
+    if (idx === 2 && isMobile) return null;
+
+    return (
+      <motion.img
+        key={`${currentSet}-${idx}`}
+        src={img.src}
+        alt={img.alt}
+        className={img.className}
+        initial={{
+          opacity: 0,
+          y: isMobile ? 80 : idx === 2 ? -100 : 100,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        exit={{
+          opacity: 0,
+          y: isMobile ? -80 : idx === 2 ? 100 : -100,
+        }}
+        transition={{
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+      />
+    );
+  })}
+</AnimatePresence>
+
 
           <img
             src="/landing/bottom-box.svg"

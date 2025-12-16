@@ -601,8 +601,19 @@ textarea::placeholder {
 }
 
 .react-select__option--is-selected {
-  background-color: #1A2B6D !important;
-  color: #ffffff !important;
+  position: relative;
+  background-color: transparent !important;
+  color: #1A2B6D !important;
+}
+
+.react-select__option--is-selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3%;
+  height: 100%;
+  background-color: #1A2B6D;
 }
 
 input:focus,
@@ -649,3 +660,10 @@ textarea:focus {
   background: #1a2b6d;
   border-color: #1a2b6d;
 }
+@media (max-width: 768px) {
+  .hero-slick .slick-dots {
+    bottom: -4px; /* push dots downward */
+   
+  }
+}
+
