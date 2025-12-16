@@ -1,4 +1,6 @@
 "use client";
+
+import { useState } from "react";
 import dynamic from "next/dynamic";
 
 const LeafletMap = dynamic(() => import("@/components/map/LeafletMap"), {
@@ -9,6 +11,62 @@ const BackToTop = dynamic(() => import("@/components/BackToTop"), {
 });
 
 export default function Contactus() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    companyName: "",
+    message: "",
+  });
+
+ 
+  const handleFirstName = (e) => {
+    let value = e.target.value;
+    value = value.replace(/[0-9]/g, ""); 
+    setFormData({ ...formData, firstName: value });
+  };
+
+
+  const handleLastName = (e) => {
+    let value = e.target.value;
+    value = value.replace(/[0-9]/g, ""); 
+    setFormData({ ...formData, lastName: value });
+  };
+
+ 
+  const handleEmail = (e) => {
+    const value = e.target.value;
+    setFormData({ ...formData, email: value });
+  };
+
+  
+  const handleCompanyName = (e) => {
+    const value = e.target.value;
+    setFormData({ ...formData, companyName: value });
+  };
+
+  
+  const handleMessage = (e) => {
+    const value = e.target.value;
+    setFormData({ ...formData, message: value });
+  };
+
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    alert("Form submitted successfully!");
+
+   
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      companyName: "",
+      message: "",
+    });
+  };
+
   return (
     <main className="min-h-screen section-block-padding md:px-18 2xl:px-18 3xl:px-22 ">
       <p className="fl1 flex justify-center title-content-gap">Contact Us</p>
@@ -19,7 +77,7 @@ export default function Contactus() {
               <h2 className="fl2">Get in touch with us</h2>
 
               <p className="fl6 max-w-[350px] text-justify ">
-                Thank you for your interest in Orbiz. Whether you’re a client,
+                Thank you for your interest in Orbiz. Whether you're a client,
                 job seeker, journalist, analyst or investor, you can find the
                 best way to contact us below.
               </p>
@@ -43,73 +101,82 @@ export default function Contactus() {
           </div>
           <div className="w-full md:w-1/2 pb-4 md:p-10">
             <div className="p-6 md:p-8 bg-white rounded-xs">
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
+              <form onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                      First Name *
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.firstName}
+                      onChange={handleFirstName}
+                      placeholder="Ex. Amy"
+                      className="w-full bg-[#F5F5F5] p-3 fl4"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                      Last Name *
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.lastName}
+                      onChange={handleLastName}
+                      placeholder="Ex. West"
+                      className="w-full bg-[#F5F5F5] p-3 fl4"
+                    />
+                  </div>
+                </div>
+
+                <div className="mb-6">
                   <label className="fl4 text-[#1A2B6DCC] mb-2 block">
-                    First Name *
+                    Email Address *
                   </label>
                   <input
-                    type="text"
-                    placeholder="Ex. Amy"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleEmail}
+                    placeholder="example@gmail.com"
                     className="w-full bg-[#F5F5F5] p-3 fl4"
                   />
                 </div>
 
-                <div>
+                <div className="mb-6">
                   <label className="fl4 text-[#1A2B6DCC] mb-2 block">
-                    Last Name *
+                    Company Name
                   </label>
                   <input
                     type="text"
-                    placeholder="Ex. West"
+                    value={formData.companyName}
+                    onChange={handleCompanyName}
+                    placeholder="Ex. Orbiz"
                     className="w-full bg-[#F5F5F5] p-3 fl4"
                   />
                 </div>
-              </div>
 
-              
-              <div className="mb-6">
-                <label className="fl4 text-[#1A2B6DCC] mb-2 block">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  placeholder="example@gmail.com"
-                  className="w-full bg-[#F5F5F5] p-3 fl4"
-                />
-              </div>
+                <div className="mb-8">
+                  <label className="fl4 text-[#1A2B6DCC] mb-2 block">
+                    Message
+                  </label>
+                  <textarea
+                    rows={6}
+                    value={formData.message}
+                    onChange={handleMessage}
+                    placeholder="********"
+                    className="w-full bg-[#F5F5F5] p-3 fl4 resize-none"
+                  />
+                </div>
 
-              
-              <div className="mb-6">
-                <label className="fl4 text-[#1A2B6DCC] mb-2 block">
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Ex. Orbiz"
-                  className="w-full bg-[#F5F5F5] p-3 fl4"
-                />
-              </div>
-
-              
-              <div className="mb-8">
-                <label className="fl4 text-[#1A2B6DCC] mb-2 block">
-                  Message
-                </label>
-                <textarea
-                  rows={6}
-                  placeholder="********"
-                  className="w-full bg-[#F5F5F5] p-3 fl4 resize-none"
-                />
-              </div>
-
-              
-              <button className="w-full bg-[#1A2B6D] !text-white py-3 fl3">
-                Send
-              </button>
+                <button
+                  type="submit"
+                  className="w-full bg-[#1A2B6D] !text-white py-3 fl3"
+                >
+                  Send
+                </button>
+              </form>
             </div>
-
           </div>
         </div>
       </div>
