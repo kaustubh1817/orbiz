@@ -164,7 +164,7 @@ export default function Contactus() {
                     rows={6}
                     value={formData.message}
                     onChange={handleMessage}
-                    placeholder="********"
+                    placeholder="message"
                     className="w-full bg-[#F5F5F5] p-3 fl6 resize-none"
                   />
                 </div>
