@@ -112,7 +112,7 @@ export default function Contactus() {
                       value={formData.firstName}
                       onChange={handleFirstName}
                       placeholder="Ex. Amy"
-                      className="w-full bg-[#F5F5F5] p-3 fl4"
+                      className="w-full bg-[#F5F5F5] p-3 fl6"
                     />
                   </div>
 
@@ -125,7 +125,7 @@ export default function Contactus() {
                       value={formData.lastName}
                       onChange={handleLastName}
                       placeholder="Ex. West"
-                      className="w-full bg-[#F5F5F5] p-3 fl4"
+                      className="w-full bg-[#F5F5F5] p-3 fl6"
                     />
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function Contactus() {
                     value={formData.email}
                     onChange={handleEmail}
                     placeholder="example@gmail.com"
-                    className="w-full bg-[#F5F5F5] p-3 fl4"
+                    className="w-full bg-[#F5F5F5] p-3 fl6"
                   />
                 </div>
 
@@ -152,7 +152,7 @@ export default function Contactus() {
                     value={formData.companyName}
                     onChange={handleCompanyName}
                     placeholder="Ex. Orbiz"
-                    className="w-full bg-[#F5F5F5] p-3 fl4"
+                    className="w-full bg-[#F5F5F5] p-3 fl6"
                   />
                 </div>
 
@@ -165,7 +165,7 @@ export default function Contactus() {
                     value={formData.message}
                     onChange={handleMessage}
                     placeholder="********"
-                    className="w-full bg-[#F5F5F5] p-3 fl4 resize-none"
+                    className="w-full bg-[#F5F5F5] p-3 fl6 resize-none"
                   />
                 </div>
 

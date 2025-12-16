@@ -5,7 +5,7 @@ export default function Ourservices() {
         <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full px-10">
           Partner with us, and let Innovation be the Propulsive force
         </p>
-      <div className="w-full flex flex-col section-block-padding container-padding">
+      <div id="platform-strategy" className="w-full flex flex-col section-block-padding container-padding">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
@@ -41,12 +41,12 @@ export default function Ourservices() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col section-block-padding container-padding ">
+      <div id="cloud-scaling" className="w-full flex flex-col section-block-padding container-padding ">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] mt-4 flex justify-center">
             <img
               src="/images/service_2.png"
-              alt="Platform Strategy"
+              alt="Cloud Scaling"
               className="w-[70%] object-contain "
             />
           </div>
@@ -107,12 +107,12 @@ export default function Ourservices() {
           />
       </div>
 
-      <div className="w-full flex flex-col  section-block-padding container-padding mt-9 md:mt-0">
+      <div id="cybersecurity" className="w-full flex flex-col  section-block-padding container-padding mt-9 md:mt-0">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
               src="/images/service_3.png"
-              alt="Platform Strategy"
+              alt="Cybersecurity"
               className="w-[70%] object-contain "
             />
           </div>
@@ -147,12 +147,12 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col section-block-padding container-padding ">
+      <div id="product-engineering" className="w-full flex flex-col section-block-padding container-padding ">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] pt-8 flex justify-center">
             <img
               src="/images/service_4.png"
-              alt="Platform Strategy"
+              alt="Product Engineering"
               className="w-[70%] object-contain "
             />
           </div>
@@ -206,12 +206,12 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col section-block-padding container-padding mt-25 md:mt-20">
+      <div id="data-engineering" className="w-full flex flex-col section-block-padding container-padding mt-25 md:mt-20">
         <div className="bg-[#F5F5F5] p-8 md:p-12 flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[35%] flex justify-center">
             <img
               src="/images/service_5.png"
-              alt="Platform Strategy"
+              alt="Data Engineering"
               className="w-[70%] object-contain "
             />
           </div>
@@ -243,12 +243,12 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col container-padding section-block-padding">
+      <div id="integrations" className="w-full flex flex-col container-padding section-block-padding">
         <div className="bg-[#FFFFFF] flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] mt-8  flex justify-center">
             <img
               src="/images/service_6.png"
-              alt="Platform Strategy"
+              alt="Integrations"
               className="w-[70%] object-contain "
             />
           </div>
