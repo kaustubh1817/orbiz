@@ -4,7 +4,7 @@ import Ourservices from "../components/landing/Ourservices.jsx"
 import Connect from "../components/landing/Connect.jsx"
 import BackToTop from "@/components/BackToTop";
 import TestimonialV2 from "@/components/landing/TestimonialV2.jsx";
-import Launching from "@/components/landing/Launching.jsx";
+
 
 export const metadata = {
   title: 'Home | Orbiz',
@@ -37,7 +37,6 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Herov2 />
-      {/* <Launching /> */}
       <Ourservices />
       <Connect />
       <TestimonialV2 />
