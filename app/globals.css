@@ -619,9 +619,16 @@ textarea:focus {
 /* dots wrapper */
 .hero-slick .slick-dots {
   bottom: 20px;
+  margin-bottom:24px !important;
   display: flex !important;
   justify-content: center;
   gap: 12px;
+}
+
+.hero-slick .slick-dots li{
+  width: 30px;
+   display: flex;
+  justify-content: center;
 }
 
 /* base dot (circle) */

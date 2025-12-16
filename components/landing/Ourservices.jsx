@@ -30,7 +30,7 @@ export default function Ourservices() {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="relative flex flex-col h-full md:h-103 transition-shadow duration-300"
+              className="relative flex flex-col h-full md:h-103 transition-shadow duration-300 hover:shadow-[6px_6px_14px_-6px_#1A2B6D1F]"
               style={{
                 backgroundImage:
                   "url(/landing/ourservices/OurServices-bg-full.png)",
