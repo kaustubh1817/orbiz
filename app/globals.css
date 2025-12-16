@@ -610,3 +610,35 @@ textarea:focus {
   outline: none;
   box-shadow: none;
 }
+
+/* remove default slick dot */
+.hero-slick .slick-dots li button:before {
+  content: none;
+}
+
+/* dots wrapper */
+.hero-slick .slick-dots {
+  bottom: 20px;
+  display: flex !important;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* base dot (circle) */
+.hero-slick .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid #1a2b6d;
+  background: transparent;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* active dot (pill) */
+.hero-slick .slick-dots li.slick-active button {
+  width: 36px;
+  border-radius: 20px;
+  background: #1a2b6d;
+  border-color: #1a2b6d;
+}

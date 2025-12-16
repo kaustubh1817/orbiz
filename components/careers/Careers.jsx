@@ -76,7 +76,7 @@ export default function Careers() {
                     <input
                       type="text"
                       placeholder="Ex. Amy"
-                      className="w-full bg-[#F5F5F5] p-3 fl4 placeholder-style"
+                      className="w-full bg-[#F5F5F5] p-3 fl6 placeholder-style"
                     />
                   </div>
 
@@ -88,7 +88,7 @@ export default function Careers() {
                     <input
                       type="text"
                       placeholder="Ex. West"
-                      className="w-full bg-[#F5F5F5] p-3 fl4 placeholder-style"
+                      className="w-full bg-[#F5F5F5] p-3 fl6 placeholder-style"
                     />
                   </div>
 
@@ -102,7 +102,7 @@ export default function Careers() {
                       onChange={(date) => setDob(date)}
                       placeholderText="DD/MM/YYYY"
                       dateFormat="dd/MM/yyyy"
-                      className="w-full bg-[#F5F5F5] p-3 fl4 placeholder-style"
+                      className="w-full bg-[#F5F5F5] p-3 fl6 placeholder-style"
                       wrapperClassName="w-full datepicker-wrapper"
                     />
                   </div>
@@ -115,7 +115,7 @@ export default function Careers() {
                     <input
                       type="email"
                       placeholder="example@gmail.com"
-                      className="w-full bg-[#F5F5F5] p-3 fl4 placeholder-style"
+                      className="w-full bg-[#F5F5F5] p-3 fl6 placeholder-style"
                     />
                   </div>
 
@@ -127,7 +127,7 @@ export default function Careers() {
                     <input
                       type="tel"
                       placeholder="**********"
-                      className="w-full bg-[#F5F5F5] p-3 fl4 placeholder-style"
+                      className="w-full bg-[#F5F5F5] p-3 fl6 placeholder-style"
                     />
                   </div>
 
@@ -152,7 +152,7 @@ export default function Careers() {
                       onChange={(date) => setStartDate(date)}
                       placeholderText="DD/MM/YYYY"
                       dateFormat="dd/MM/yyyy"
-                      className="w-full bg-[#F5F5F5] p-3 fl4 placeholder-style"
+                      className="w-full bg-[#F5F5F5] p-3 fl6 placeholder-style"
                       wrapperClassName="w-full datepicker-wrapper"
                     />
                   </div>
@@ -165,7 +165,7 @@ export default function Careers() {
                     <input
                       type="text"
                       placeholder="********"
-                      className="w-full bg-[#F5F5F5] p-3 fl4 placeholder-style"
+                      className="w-full bg-[#F5F5F5] p-3 fl6 placeholder-style"
                     />
                   </div>
                 </div>

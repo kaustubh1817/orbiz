@@ -50,7 +50,7 @@ export default function Launching() {
     <section
       className="section-block-padding flex flex-col justify-center align-center max-h-screen"
       style={{
-        backgroundImage: "url(/landing/launching-bg.png)",
+        backgroundImage: "url(/landing/launching-bg2.png)",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}

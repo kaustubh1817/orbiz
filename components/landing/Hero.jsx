@@ -105,7 +105,8 @@ export default function Hero() {
         </div>
 
         
-        <div className="relative flex flex-col w-full md:w-1/2 md:h-[625px] 3xl:h-[750px] h-[445px]">
+        <div className="relative flex flex-col w-full md:w-1/2 md:h-[625px] 3xl:h-[750px] h-[445px] overflow-hidden">
+
           <img
             src="/landing/top-box.png"
             alt="top-box"

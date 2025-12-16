@@ -80,7 +80,7 @@ export default function Carousel3D() {
           </div>
         </div>
                
-        <div className="flex w-full items-center justify-between container-padding mt-15">
+        <div className="flex w-full items-center justify-between container-padding mt-20">
           <button
             onClick={handlePrev}
             disabled={isAnimating}
