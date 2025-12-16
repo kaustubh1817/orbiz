@@ -622,7 +622,7 @@ textarea:focus {
   margin-bottom:24px !important;
   display: flex !important;
   justify-content: center;
-  gap: 12px;
+  
 }
 
 .hero-slick .slick-dots li{
@@ -649,3 +649,10 @@ textarea:focus {
   background: #1a2b6d;
   border-color: #1a2b6d;
 }
+@media (max-width: 768px) {
+  .hero-slick .slick-dots {
+    bottom: -4px; /* push dots downward */
+   
+  }
+}
+
