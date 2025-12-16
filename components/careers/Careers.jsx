@@ -319,6 +319,7 @@ export default function Careers() {
                         onChange={handlePosition}
                         placeholder="Select"
                         classNamePrefix="react-select"
+                        className="fl6"
                       />
                       {submitted && errors.position && (
                         <p className="text-red-500 text-sm mt-1">

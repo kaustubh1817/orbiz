@@ -6,7 +6,7 @@ export default function Launching() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
-  const [messageType, setMessageType] = useState(""); // "success" or "error"
+  const [messageType, setMessageType] = useState("");
 
   const handleNotify = async (e) => {
     e.preventDefault();
@@ -55,19 +55,19 @@ export default function Launching() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h1 className="text-[45px] md:text-[56px] font-poppins-semibold text-[#1A2B6D] text-center title-content-gap">
+      <h1 className="text-[40px] md:text-[56px] font-poppins-semibold text-[#1A2B6D] text-center title-content-gap">
         Launching Soon
       </h1>
 
-      <p className="text-[20px] md:text-[28px] font-poppins-light text-[#1A2B6D] text-center">
+      <p className="text-[18px] md:text-[28px] font-poppins-light text-[#1A2B6D] text-center">
         We are excited to introduce you to the <br />
         <span className="font-poppins-bold">AI & Machine Learning </span>
         service we are launching!
       </p>
 
-      <div className="flex flex-col justify-center items-center section-block-padding">
-       <div className="flex justify-between w-1/2 items-center">
-        <p className="text-[14px] md:text-[18px] font-poppins-light text-[#1A2B6D] md:-mb-10"> 
+      <div className="flex flex-col justify-center items-center section-block-padding mt-10 md:mt-0 gap-10 md:gap-0">
+       <div className="flex md:flex-row flex-col gap-10 md:gap-0 justify-between w-1/2 items-center">
+        <p className="text-[14px] md:text-[18px] font-poppins-light text-[#1A2B6D] md:-mb-10 md:text-start text-center"> 
           Stay connected and be the first to know.
         </p>
         <img

@@ -622,12 +622,12 @@ textarea:focus {
   margin-bottom:24px !important;
   display: flex !important;
   justify-content: center;
-  gap: 12px;
+  gap: 0px;
 }
 
 .hero-slick .slick-dots li{
   width: 30px;
-   display: flex;
+  display: flex;
   justify-content: center;
 }
 
