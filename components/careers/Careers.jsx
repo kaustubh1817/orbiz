@@ -41,50 +41,42 @@ export default function Careers() {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
-  
   const handleFirstName = (e) => {
     let value = e.target.value;
-    value = value.replace(/[0-9]/g, ""); 
+    value = value.replace(/[0-9]/g, "");
     setFormData({ ...formData, firstName: value });
   };
 
-
   const handleLastName = (e) => {
     let value = e.target.value;
-    value = value.replace(/[0-9]/g, ""); 
+    value = value.replace(/[0-9]/g, "");
     setFormData({ ...formData, lastName: value });
   };
 
- 
   const handleEmail = (e) => {
     const value = e.target.value;
     setFormData({ ...formData, email: value });
   };
 
- 
   const handlePhone = (e) => {
     let value = e.target.value;
-    value = value.replace(/[^0-9+]/g, ""); 
+    value = value.replace(/[^0-9+]/g, "");
     value = value.slice(0, 14);
     setFormData({ ...formData, phone: value });
   };
 
-  
   const handleDOB = (date) => {
     setFormData({ ...formData, dob: date });
   };
 
- 
   const handlePosition = (selectedOption) => {
     setFormData({ ...formData, position: selectedOption });
   };
 
-  
   const handleStartDate = (date) => {
     setFormData({ ...formData, startDate: date });
   };
 
-  
   const handleResumeLink = (e) => {
     const value = e.target.value;
     setFormData({ ...formData, resumeLink: value });
@@ -118,7 +110,10 @@ export default function Careers() {
     }
     if (!formData.resumeLink.trim()) {
       newErrors.resumeLink = "Resume link is required";
-    } else if (!formData.resumeLink.startsWith("http://") && !formData.resumeLink.startsWith("https://")) {
+    } else if (
+      !formData.resumeLink.startsWith("http://") &&
+      !formData.resumeLink.startsWith("https://")
+    ) {
       newErrors.resumeLink = "URL must start with http:// or https://";
     }
 
@@ -135,7 +130,7 @@ export default function Careers() {
     if (Object.keys(newErrors).length === 0) {
       console.log("Form submitted:", formData);
       alert("Form submitted successfully!");
-      
+
       // Reset form
       setFormData({
         firstName: "",
@@ -165,7 +160,13 @@ export default function Careers() {
         demonstrate a capacity to identify opportunities amid transformations.
         If you possess a fervent enthusiasm for technology and exhibit an
         unwavering commitment to continuous learning, adaptability, and personal
-        development, we are interested in your candidacy.
+        development, we are interested in your candidacy. At Orbiz, we
+        acknowledge the pivotal role individuals like yourself play in
+        instigating transformative shifts in established practices, underscoring
+        their indispensability to our success. If you are motivated to
+        contribute to the development of pioneering products and are committed
+        to delivering significant value in response to users' requirements,
+        Orbiz offers an ideal professional milieu for your aspirations.
       </p>
 
       <div className="w-full flex flex-col md:flex-row gap-10 md:px-18 2xl:px-18 3xl:px-22 section-block-padding">
@@ -198,11 +199,15 @@ export default function Careers() {
                         onChange={handleFirstName}
                         placeholder="Ex. Amy"
                         className={`w-full bg-[#F5F5F5] p-3 fl6 placeholder-style border-2 transition ${
-                          submitted && errors.firstName ? "border-red-500" : "border-transparent"
+                          submitted && errors.firstName
+                            ? "border-red-500"
+                            : "border-transparent"
                         }`}
                       />
                       {submitted && errors.firstName && (
-                        <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.firstName}
+                        </p>
                       )}
                     </div>
 
@@ -217,11 +222,15 @@ export default function Careers() {
                         onChange={handleLastName}
                         placeholder="Ex. West"
                         className={`w-full bg-[#F5F5F5] p-3 fl6 placeholder-style border-2 transition ${
-                          submitted && errors.lastName ? "border-red-500" : "border-transparent"
+                          submitted && errors.lastName
+                            ? "border-red-500"
+                            : "border-transparent"
                         }`}
                       />
                       {submitted && errors.lastName && (
-                        <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.lastName}
+                        </p>
                       )}
                     </div>
 
@@ -236,7 +245,9 @@ export default function Careers() {
                         placeholderText="DD/MM/YYYY"
                         dateFormat="dd/MM/yyyy"
                         className={`w-full bg-[#F5F5F5] p-3 fl6 placeholder-style border-2 transition ${
-                          submitted && errors.dob ? "border-red-500" : "border-transparent"
+                          submitted && errors.dob
+                            ? "border-red-500"
+                            : "border-transparent"
                         }`}
                         wrapperClassName="w-full datepicker-wrapper"
                         showMonthDropdown
@@ -244,7 +255,9 @@ export default function Careers() {
                         dropdownMode="select"
                       />
                       {submitted && errors.dob && (
-                        <p className="text-red-500 text-sm mt-1">{errors.dob}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.dob}
+                        </p>
                       )}
                     </div>
 
@@ -259,11 +272,15 @@ export default function Careers() {
                         onChange={handleEmail}
                         placeholder="example@gmail.com"
                         className={`w-full bg-[#F5F5F5] p-3 fl6 placeholder-style border-2 transition ${
-                          submitted && errors.email ? "border-red-500" : "border-transparent"
+                          submitted && errors.email
+                            ? "border-red-500"
+                            : "border-transparent"
                         }`}
                       />
                       {submitted && errors.email && (
-                        <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.email}
+                        </p>
                       )}
                     </div>
 
@@ -279,11 +296,15 @@ export default function Careers() {
                         placeholder="Ex. +91XXXXXXXXXX"
                         maxLength="14"
                         className={`w-full bg-[#F5F5F5] p-3 fl6 placeholder-style border-2 transition ${
-                          submitted && errors.phone ? "border-red-500" : "border-transparent"
+                          submitted && errors.phone
+                            ? "border-red-500"
+                            : "border-transparent"
                         }`}
                       />
                       {submitted && errors.phone && (
-                        <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.phone}
+                        </p>
                       )}
                     </div>
 
@@ -300,14 +321,16 @@ export default function Careers() {
                         classNamePrefix="react-select"
                       />
                       {submitted && errors.position && (
-                        <p className="text-red-500 text-sm mt-1">{errors.position}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.position}
+                        </p>
                       )}
                     </div>
 
                     {/* Start Date */}
                     <div>
                       <label className="fl4 text-[#1A2B6DCC] mb-2 block">
-                        Available Start Date 
+                        Available Start Date
                       </label>
                       <DatePicker
                         selected={formData.startDate}
@@ -333,11 +356,15 @@ export default function Careers() {
                         onChange={handleResumeLink}
                         placeholder="https://drive.google.com/..."
                         className={`w-full bg-[#F5F5F5] p-3 fl6 placeholder-style border-2 transition ${
-                          submitted && errors.resumeLink ? "border-red-500" : "border-transparent"
+                          submitted && errors.resumeLink
+                            ? "border-red-500"
+                            : "border-transparent"
                         }`}
                       />
                       {submitted && errors.resumeLink && (
-                        <p className="text-red-500 text-sm mt-1">{errors.resumeLink}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.resumeLink}
+                        </p>
                       )}
                     </div>
                   </div>
