@@ -155,7 +155,7 @@ export default function Careers() {
         Orbiz: Where Passion Meets Progress
       </p>
 
-      <p className="fl4 text-justify mx-auto md:w-[90%] w-full container-padding title-content-gap">
+      <p className="fl4  mx-auto md:w-[90%] w-full container-padding title-content-gap text-center">
         We highly appreciate individuals who excel in the face of challenges and
         demonstrate a capacity to identify opportunities amid transformations.
         If you possess a fervent enthusiasm for technology and exhibit an

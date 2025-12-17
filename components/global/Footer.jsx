@@ -144,7 +144,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-3 items-center">
+            <div className="flex flex-col gap-3">
               <h4 className="fl5 mb-0 md:mb-4">Links</h4>
               <ul className="space-y-2">
                 <li>
@@ -164,7 +164,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-3 items-center ">
+            <div className="flex flex-col gap-3">
               <h4 className="fl5 mb-0 md:mb-4">Contact</h4>
               <ul className="space-y-2">
                 <li>

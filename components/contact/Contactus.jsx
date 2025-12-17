@@ -76,7 +76,7 @@ export default function Contactus() {
             <div className="flex flex-col gap-4">
               <h2 className="fl2">Get in touch with us</h2>
 
-              <p className="fl6 max-w-[350px] text-justify ">
+              <p className="fl6 max-w-[350px]  ">
                 Thank you for your interest in Orbiz. Whether you're a client,
                 job seeker, journalist, analyst or investor, you can find the
                 best way to contact us below.
@@ -92,7 +92,7 @@ export default function Contactus() {
                 <h3 className="fl2">Clients</h3>
               </div>
 
-              <p className="fl6 max-w-[350px] text-justify ">
+              <p className="fl6 max-w-[350px]  ">
                 Find out more on how we can help you to get the future you want
                 in through our industry expertise, services, and technology
                 partners.
@@ -210,7 +210,7 @@ export default function Contactus() {
                 <img src="/icons/job.svg" className="size-7" alt="Job Icon" />
                 <h3 className="fl2 !text-white">Job Seekers</h3>
               </div>
-              <p className="fl6 !text-white text-justify">
+              <p className="fl6 !text-white ">
                 Please refer following link to know more about Orbiz culture and
                 career opportunities.
               </p>
@@ -239,7 +239,7 @@ export default function Contactus() {
                 />
                 <h3 className="fl2 !text-white">Head Office</h3>
               </div>
-              <p className="fl6 !text-white text-justify">
+              <p className="fl6 !text-white ">
                 Orbiz Analytics India Pvt. Ltd. Plot No. 52, Suman Ankur
                 complex, Shayadri Farm, Baner Road, Baner, Pune 411045
               </p>

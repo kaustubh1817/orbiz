@@ -30,7 +30,7 @@ export default function Whoweare() {
         <p className="fl1 text-center mx-auto title-content-gap md:w-1/2 w-full">
           Providing Valuable Solution: Accelerating Growth Swiftly
         </p>
-        <p className="fl4 md:w-[75%] w-full mx-auto text-justify ">
+        <p className="fl4 md:w-[75%] w-full mx-auto text-center">
           At Orbiz, we pride ourselves on delivering high-quality service to
           every client. Our goal is to exceed your expectations and provide you
           with the best possible experience. We stay up-to-date with the latest
@@ -54,7 +54,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-12">
             <p className="fl2  mb-4">Accelerate</p>
 
-            <p className="fl4 flex justify-center text-justify md:mb-12">
+            <p className="fl4 flex justify-center  md:mb-12">
               In the realm of software business, our commitment is to accelerate
               your growth journey by offering a comprehensive suite of best
               practices, tailored solutions, and a dynamic workforce. This
@@ -78,7 +78,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-12">
             <p className="fl2  mb-4">Transform</p>
 
-            <p className="fl4 flex justify-center text-justify md:mb-12">
+            <p className="fl4 flex justify-center  md:mb-12">
               As seasoned practitioners in transformation, we specialize in
               rejuvenating legacy products, seamlessly transitioning them to
               new-age technologies. Our focus is on providing enhanced security
@@ -102,7 +102,7 @@ export default function Whoweare() {
           <div className="w-full md:w-1/2 flex flex-col bg-[#F5F5F5] p-12">
             <p className="fl2  mb-4">Innovate</p>
 
-            <p className="fl4 flex justify-center text-justify md:mb-12">
+            <p className="fl4 flex justify-center  md:mb-12">
               At the core of our mission is a passion for innovation, driven by
               a team of highly skilled professionals. We excel in translating
               ideas into successful executions, guaranteeing success for your
@@ -142,7 +142,7 @@ export default function Whoweare() {
                 <div className="w-[95%] mx-auto">
                 <div className="w-full  h-[1px] bg-[#1A2B6D4D]"></div>
 
-                <p className="fl6 text-justify py-6">{leader.desc}</p>
+                <p className="fl6  py-6">{leader.desc}</p>
                 </div>
               </div>
             ))}

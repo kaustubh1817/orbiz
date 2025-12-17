@@ -17,7 +17,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Platform Strategy</p>
             <div className="w-full h-px bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-0 md:mb-12 text-justify">
+            <p className="fl4 mb-0 md:mb-12 ">
               Craft a winning business approach with our Platform Strategy
               services at Orbiz. We specialize in developing strategic
               frameworks that leverage platforms to enhance your organization's
@@ -54,7 +54,7 @@ export default function Ourservices() {
           <div className="w-full pt-8 md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Cloud Scaling</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-0 md:mb-12 text-justify">
+            <p className="fl4 mb-0 md:mb-12 ">
               Ensure your business is equipped to scale effortlessly in the
               cloud with our Cloud Scaling services at Orbiz. We understand the
               dynamic nature of today's digital landscape and offer tailored
@@ -93,7 +93,7 @@ export default function Ourservices() {
           className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
         />
         <div className="bg-[#1A2B6D] absolute bottom-1 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] md:w-[75%] lg:w-[60%] p-5 sm:p-8 md:p-10">
-          <p className="fl6 !text-white text-justify">
+          <p className="fl6 !text-white ">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that
@@ -119,7 +119,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Cybersecurity</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-0 md:mb-12 text-justify">
+            <p className="fl4 mb-0 md:mb-12 ">
               Safeguard your digital assets and fortify your organization
               against cyber threats with our comprehensive Cyber Security
               Services at Orbiz. We understand the critical importance of a
@@ -159,7 +159,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%]  flex flex-col">
             <p className="fl2 mb-4">Product Engineering</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-0 md:mb-12 text-justify">
+            <p className="fl4 mb-0 md:mb-12 ">
               Elevate your product development journey with our comprehensive
               Product Engineering services at Orbiz. We specialize in
               transforming visionary concepts into tangible, market-ready
@@ -192,7 +192,7 @@ export default function Ourservices() {
         />
 
         <div className="absolute md:static w-[90%] p-5 sm:p-8 md:p-10 lg:absolute lg:right-0 -bottom-15 md:bottom-45 lg:-translate-y-1/2 bg-[#1A2B6D] lg:w-[45%]">
-          <p className="!text-white fl6 text-justify">
+          <p className="!text-white fl6 ">
             At Orbiz, we specialize in crafting custom software solutions
             designed to meet the specific requirements of your business. Our
             goal is to deliver robust, scalable, and innovative software that
@@ -218,7 +218,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Data Engineering</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-0 md:mb-12 text-justify">
+            <p className="fl4 mb-0 md:mb-12 ">
               Empower your business with our Data Engineering services, where we
               seamlessly bridge the gap between raw data and actionable
               insights. At Orbiz, our expert data engineers specialize in
@@ -255,7 +255,7 @@ export default function Ourservices() {
           <div className="w-full md:w-[65%] flex flex-col">
             <p className="fl2 mb-4">Integrations</p>
             <div className="w-full h-[1px] bg-[#1A2B6D4D] mb-6"></div>
-            <p className="fl4 mb-0 md:mb-12 text-justify">
+            <p className="fl4 mb-0 md:mb-12 ">
               Facilitate seamless connectivity across your business ecosystem
               with our Integration Services at Orbiz. We specialize in creating
               cohesive solutions that harmonize disparate systems, applications,

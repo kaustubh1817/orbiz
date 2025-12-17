@@ -108,7 +108,7 @@ useEffect(() => {
           <h1 className="fl1">
             Innovation to Execution: Accelerate your Technology Development
           </h1>
-          <p className="fl4 text-justify">
+          <p className="fl4 ">
             At Orbiz, we are passionate about helping businesses like yours
             leverage technology to drive growth and improve efficiency. Our team
             of experienced consultants and engineers provide customized IT
@@ -139,7 +139,7 @@ useEffect(() => {
         alt={img.alt}
         className={img.className}
         initial={{
-          opacity: 0,
+          opacity: 1,
           y: isMobile ? 80 : idx === 2 ? -100 : 100,
         }}
         animate={{
@@ -147,7 +147,7 @@ useEffect(() => {
           y: 0,
         }}
         exit={{
-          opacity: 0,
+          opacity: 1,
           y: isMobile ? -80 : idx === 2 ? 100 : -100,
         }}
         transition={{

@@ -50,11 +50,11 @@ export default function Ourservices() {
               </div>
 
               <div className="pt-28 md:pt-32 px-11 pb-6">
-                <h2 className="fl2 mb-3 text-[#1A2B6D] h-10 md:h-16 2xl:h-7">{service.title}</h2>
+                <h2 className="fl2 mb-3 text-[#1A2B6D] h-16 xl:h-8">{service.title}</h2>
 
                 <div className="w-full h-[1px] bg-[#1A2B6D]/20 mb-3"></div>
 
-                <p className="fl6 text-gray-600 h-35">{service.description}</p>
+                <p className="fl6 text-gray-600 h-36">{service.description}</p>
                 <Link
                   href={service.href}
                   className="fl3 w-full flex justify-between items-center text-[#E31E24] gap-2 hover:gap-3 transition-all duration-200 "
