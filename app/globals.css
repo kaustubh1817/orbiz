@@ -627,8 +627,8 @@ textarea:focus {
 
 /* dots wrapper */
 .hero-slick .slick-dots {
-  bottom: 20px;
-  margin-bottom:24px !important;
+  bottom:20px;
+  margin-bottom:28px !important;
   display: flex !important;
   justify-content: center;
   gap: 0px;
