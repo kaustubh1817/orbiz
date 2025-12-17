@@ -81,7 +81,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="relative w-full section-block-padding md:mt-10 mt-7">
+      <div className="relative w-full section-block-padding md:mt-11 mt-2">
          <img
             src="/ourServices/OurSer-top.webp"
             alt="top-box-image"
@@ -147,7 +147,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div id="product-engineering" className="w-full flex flex-col section-block-top container-padding ">
+      <div id="product-engineering" className="w-full flex flex-col section-block-top container-padding md:mt-0 -mt-7">
         <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] pt-8 flex justify-center">
             <img
@@ -184,7 +184,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div className="relative w-full flex flex-col lg:flex-row items-center section-block-top">
+      <div className="relative w-full flex flex-col lg:flex-row items-center section-block-top mt-1">
         <img
           src="/images/service9.png"
           alt="service9"
@@ -243,7 +243,7 @@ export default function Ourservices() {
         </div>
       </div>
 
-      <div id="integrations" className="w-full flex flex-col container-padding section-block-top">
+      <div id="integrations" className="w-full flex flex-col container-padding section-block-top md:mt-0 -mt-5">
         <div className="bg-[#FFFFFF] p-8 md:p-12 flex flex-col md:flex-row-reverse gap-12">
           <div className="w-full md:w-[35%] mt-8  flex justify-center">
             <img
