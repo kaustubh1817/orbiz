@@ -70,7 +70,7 @@ export default function Footer() {
                 {loading ? "Subscribing..." : "Subscribe"}
               </button>
             </div>
-            {message && (
+            {/* {message && (
               <p
                 className={`message ${
                   message.includes("") ? "success" : "error"
@@ -78,7 +78,7 @@ export default function Footer() {
               >
                 {message}
               </p>
-            )}
+            )} */}
           </form>
         </div>
       </section>
