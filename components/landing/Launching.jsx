@@ -48,7 +48,7 @@ export default function Launching() {
 
   return (
     <section
-      className="section-block-padding flex flex-col justify-center align-center max-h-screen  bg-[url('/landing/launching-bg-mobile.png')]
+      className="section-block-padding flex flex-col justify-center align-center max-h-screen  bg-[url('/landing/launching-bg-mobilev2.png')]
     md:bg-[url('/landing/launching-bg2.png')]
     bg-cover
     bg-no-repeat
