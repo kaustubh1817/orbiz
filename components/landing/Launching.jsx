@@ -114,7 +114,7 @@ export default function Launching() {
             </button>
           </div>
 
-          {message && (
+          {/* {message && (
             <p
               className={`mt-3 px-4 py-2 text-center text-sm font-medium rounded ${
                 messageType === "success"
@@ -122,7 +122,7 @@ export default function Launching() {
             >
               {message}
             </p>
-          )}
+          )} */}
         </form>
       </div>
        </div>

@@ -45,7 +45,7 @@ export default function Ourservices() {
                 <img
                   src={service.icon}
                   alt={service.title}
-                  className="w-auto h-13 object-contain pr-4"
+                  className="w-auto h-10 object-contain pr-4"
                 />
               </div>
 
