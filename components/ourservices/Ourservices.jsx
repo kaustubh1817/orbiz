@@ -88,7 +88,7 @@ export default function Ourservices() {
             className="absolute md:h-17.5 md:w-45 h-9 w-24 top-5 md:top-6 -left-10"
           />
         <img
-          src="/images/service7.jpg"
+          src="/images/service7v2.jpg"
           alt="service8"
           className="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover"
         />
@@ -186,7 +186,7 @@ export default function Ourservices() {
 
       <div className="relative w-full flex flex-col lg:flex-row items-center section-block-top mt-1">
         <img
-          src="/images/service9.png"
+          src="/images/service9v2.jpg"
           alt="service9"
           className="w-full h-[300px] sm:h-[400px] lg:w-[80%] lg:h-[600px] object-cover"
         />
