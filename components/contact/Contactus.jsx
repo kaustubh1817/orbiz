@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const LeafletMap = dynamic(() => import("@/components/map/LeafletMap"), {
   ssr: false,
@@ -215,8 +216,8 @@ export default function Contactus() {
                 career opportunities.
               </p>
             </div>
-            <a
-              href="/contact"
+            <Link
+              href="/careers#careers-form"
               className="fl3 w-full pt-10 md:pt-20 flex justify-between items-center text-white gap-2 hover:gap-3 transition-all duration-200 "
             >
               <span>Learn More</span>
@@ -226,7 +227,7 @@ export default function Contactus() {
                 alt="arrow"
                 className="w-6 h-auto !text-white"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="bg-[#13296A] text-white p-10 rounded-[2px] flex flex-col">
