@@ -146,7 +146,7 @@ body {
   }
 
   .fl2 {
-    @apply text-[18px] md:text-[28px] font-poppins-medium text-[#1A2B6D]
+    @apply text-[16px] md:text-[24px] font-poppins-medium text-[#1A2B6D]
   }
 
   .fl3 {

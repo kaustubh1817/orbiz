@@ -19,7 +19,7 @@ export default function Ourservices() {
   return (
     <main className="section-block-padding bg-[#F5F5F5] container-padding">
       <h1 className="fl1 text-center title-content-gap">Our Services</h1>
-      <p className="fl4 text-center md:max-w-1/2 mx-auto text-justify">
+      <p className="fl4 text-center md:max-w-[48vw] mx-auto">
         We offer a range of IT consulting and services to help your business
         succeed. Whether you need cloud solutions, managed IT services, disaster
         recovery, cloud desktop, network solutions, or support consulting, we've
@@ -50,11 +50,11 @@ export default function Ourservices() {
               </div>
 
               <div className="pt-28 md:pt-32 px-11 pb-6">
-                <h2 className="fl2 mb-3 text-[#1A2B6D]">{service.title}</h2>
+                <h2 className="fl2 mb-3 text-[#1A2B6D] h-10 md:h-16 2xl:h-7">{service.title}</h2>
 
                 <div className="w-full h-[1px] bg-[#1A2B6D]/20 mb-3"></div>
 
-                <p className="fl6 text-gray-600 h-35 text-justify">{service.description}</p>
+                <p className="fl6 text-gray-600 h-35">{service.description}</p>
                 <Link
                   href={service.href}
                   className="fl3 w-full flex justify-between items-center text-[#E31E24] gap-2 hover:gap-3 transition-all duration-200 "
