@@ -2,7 +2,7 @@
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/company/orbiz-one/",
       icon: "/landing/linkedin.png",
     },
     {

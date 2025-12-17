@@ -104,11 +104,11 @@ useEffect(() => {
     <section className="pl-10 md:pl-18 2xl:pl-18 3xl:pl-22 relative py-10 md:py-0 3xl:py-0 overflow-hidden">
       <div className="flex flex-col md:flex-row w-full text-center md:text-left gap-10">
 
-        <div className="flex flex-col w-full md:w-1/2 justify-center gap-10 pr-10 md:pr-0">
+        <div className="flex flex-col w-full md:w-1/2 justify-center gap-3 md:gap-10 pr-10 md:pr-0">
           <h1 className="fl1">
             Innovation to Execution: Accelerate your Technology Development
           </h1>
-          <p className="fl4 text-justify">
+          <p className="fl4 ">
             At Orbiz, we are passionate about helping businesses like yours
             leverage technology to drive growth and improve efficiency. Our team
             of experienced consultants and engineers provide customized IT

@@ -9,18 +9,24 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Herov2 = () => {
   const settings = {
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 600,
-  slidesToShow: 1,
-  slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
 
-  swipe: true,
-  swipeToSlide: true,
-  touchMove: true,
-  draggable: true,
-};
+    autoplay: true,        
+    autoplaySpeed: 6000,   
+
+    pauseOnHover: false,   
+    pauseOnFocus: false,  
+    swipe: true,
+    swipeToSlide: true,
+    touchMove: true,
+    draggable: true,
+  };
+
 
 
   return (

@@ -216,7 +216,7 @@ export default function Contactus() {
               </p>
             </div>
             <a
-              href="/contact"
+              href="/careers"
               className="fl3 w-full pt-10 md:pt-20 flex justify-between items-center text-white gap-2 hover:gap-3 transition-all duration-200 "
             >
               <span>Learn More</span>
