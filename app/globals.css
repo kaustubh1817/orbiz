@@ -536,6 +536,35 @@ body {
   }
 }
 
+
+@media (min-width: 1400px) {
+  .carousel-item {
+    width: 400px;
+    height: 500px;
+  }
+
+  .carousel-item.center {
+    width: 400px;
+    height: 500px;
+  }
+
+  .carousel-item.left-1 {
+    transform: translateX(-640px) translateZ(50px) scale(0.9)
+  }
+
+  .carousel-item.left-2 {
+    transform: translateX(-1036px) translateZ(0px) scale(0.8)
+  }
+
+  .carousel-item.right-1 {
+    transform: translateX(640px) translateZ(50px) scale(0.9);
+  }
+
+  .carousel-item.right-2 {
+    transform: translateX(1036px) translateZ(0px) scale(0.8);
+  }
+}
+
 label {
   color: #1A2B6DCC;
   font-family: inherit;
