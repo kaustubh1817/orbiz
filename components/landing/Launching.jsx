@@ -47,7 +47,7 @@ export default function Launching() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center md:-mt-14 bg-[url('/landing/launching-bg-mobilev3.webp')] md:bg-contain bg-no-repeat bg-center md:bg-cover md:bg-[url('/landing/launching-bg2.png')]">
+    <section className="min-h-screen sm:min-h-auto flex flex-col justify-center items-center md:mt-8 bg-[url('/landing/launching-bg-mobilev3.webp')] md:bg-contain bg-no-repeat bg-center sm:bg-cover md:bg-[url('/landing/launching-bg2.png')]">
       
         <h1 className="text-[40px] md:text-[56px] font-poppins-semibold text-[#1A2B6D] text-center title-content-gap">
           Launching Soon
