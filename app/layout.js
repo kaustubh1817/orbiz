@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Navbar />
-        <div className="md:pt-23 pt-16">
+        <div className="md:pt-23 pt-16 min-h-screen">
         {children}
         </div>
         <Footer />
