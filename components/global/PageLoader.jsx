@@ -6,7 +6,7 @@ const Skeleton = ({ className }) => (
 
 const PageLoader = () => {
   return (
-    <div className="fixed inset-0 z-[999999999999] flex items-center justify-center bg-white">
+    <div className="fixed inset-0 z-9999999 flex items-center justify-center bg-white">
       
       <div className="absolute inset-0 flex flex-col items-center px-6 py-10 gap-6 opacity-50 overflow-y-auto">
         <Skeleton className="w-full max-w-2xl h-64 rounded-xl" />

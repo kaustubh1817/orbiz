@@ -36,7 +36,7 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="w-full lg:h-[94px] bg-[#F5F5F5] py-3 fixed top-0 z-[10000] left-1/2 -translate-x-1/2 flex justify-between md:rounded-none items-center container-padding ">
+        <nav className="w-full lg:h-[94px] bg-[#F5F5F5] py-3 fixed top-0 z-20 left-1/2 -translate-x-1/2 flex justify-between md:rounded-none items-center container-padding ">
             <div>
                 <Link href="/" className="flex items-center">
                     <Image

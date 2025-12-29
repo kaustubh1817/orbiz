@@ -4,6 +4,7 @@ import Ourservices from "../components/landing/Ourservices.jsx"
 import Connect from "../components/landing/Connect.jsx"
 import BackToTop from "@/components/BackToTop";
 import TestimonialV2 from "@/components/landing/TestimonialV2.jsx";
+import HomePopup from "@/components/HomePopup.jsx";
 
 
 export const metadata = {
@@ -35,6 +36,8 @@ export const metadata = {
 
 export default function Home() {
   return (
+    <>
+    <HomePopup />
     <main className="min-h-screen">
       <Herov2 />
       <Ourservices />
@@ -42,5 +45,6 @@ export default function Home() {
       <TestimonialV2 />
       <BackToTop />
     </main>
+    </>
   );
 }
