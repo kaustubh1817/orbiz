@@ -2,6 +2,7 @@
 
 import Hero from "./Hero";
 import Launching from "./Launching";
+import Scale_up from "./Scale_up";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
@@ -34,6 +35,7 @@ const Herov2 = () => {
       <Slider {...settings} className="hero-slick">
         <Hero />
         <Launching />
+        <Scale_up />
       </Slider>
     </section>
   );
