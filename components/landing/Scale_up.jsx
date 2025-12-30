@@ -47,7 +47,7 @@ export default function Scale_up() {
   };
 
   return (
-    <section className="min-h-screen sm:min-h-auto flex flex-col justify-center items-center md:mt-8 bg-[url('/landing/launching-bg-mobilev3.webp')] md:bg-contain bg-no-repeat bg-center sm:bg-cover md:bg-[url('/landing/launching-bg2.png')]">
+    <section className="min-h-screen sm:min-h-auto flex flex-col justify-center items-center md:mt-15 bg-[url('/landing/launching-bg-mobilev3.webp')] md:bg-contain bg-no-repeat bg-center sm:bg-cover md:bg-[url('/landing/launching-bg2.png')]">
       
         <h1 className="fl1 text-center title-content-gap">
           Scale-up or Lean-up?
@@ -64,7 +64,7 @@ export default function Scale_up() {
           One protects your assets; the other attracts millions in funding. Do you know which is which?
         </p>
 
-        <a href="/company_registration" className="red-btn mt-8 md:mt-10 mx-auto md:mx-0">
+        <a href="/company_registration" className="red-btn mt-8 md:mt-13 mx-auto md:mx-0">
             Learn More
           </a>
       
